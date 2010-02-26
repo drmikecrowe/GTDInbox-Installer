@@ -15,8 +15,8 @@ Var Url
 !include LogicLib.nsh
 
 !define MUI_PRODUCT "GTDInbox" 
-!define GTD_VERSION "3.0a19" 
-!define PRISM_VERSION "1.0b2"
+!define GTD_VERSION "3.0.17" 
+!define PRISM_VERSION "1.0b3"
 !define MUI_VERSION "${GTD_VERSION}"
 
 !define MUI_BRANDINGTEXT "Managing Email Just Got Easier" 
@@ -138,7 +138,7 @@ done:
 
 ;  PRISM webApp data is recursively copied from yourAppAppData to "$APPDATA\WebApps" 
 SetOutPath "$PROGRAMFILES\Prism\extensions\{bcd47b5a-43be-433f-9051-7ce2cdf94ac0}\" 
-File /r "GTDInbox-Extension\*"
+File /r /x .git /x .gitignore "GTDInbox-Extension\*"
 
 ;windirExists: 
 ;Store installation folder 
