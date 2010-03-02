@@ -17,7 +17,7 @@ Var Url
 !define MUI_PRODUCT "GTDInbox" 
 !define GTD_VERSION "3.0.17" 
 !define PRISM_VERSION "1.0b3"
-!define INSTALL_VERSION "0.2"
+!define INSTALL_VERSION "0.3"
 !define MUI_VERSION "${GTD_VERSION}"
 
 !define MUI_BRANDINGTEXT "Managing Email Just Got Easier" 
@@ -119,6 +119,13 @@ SetOutPath "$INSTDIR\"
 File /r "prism.${PRISM_VERSION}.en-US.win32\prism\*"
 
 ;  PRISM webApp data is recursively copied from yourAppAppData to "$APPDATA\WebApps" 
+StrCmp $Url "" Default
+Goto WriteFile
+
+Default:
+StrCpy $Url "https://mail.google.com"
+
+WriteFile:
 SetOutPath "$APPDATA\WebApps\GTDInbox@prism.app\" 
 File /r "webapps\*"
 ClearErrors
