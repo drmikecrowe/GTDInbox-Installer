@@ -17,6 +17,7 @@ Var Url
 !define MUI_PRODUCT "GTDInbox" 
 !define GTD_VERSION "3.0.17" 
 !define PRISM_VERSION "1.0b3"
+!define INSTALL_VERSION "0.2"
 !define MUI_VERSION "${GTD_VERSION}"
 
 !define MUI_BRANDINGTEXT "Managing Email Just Got Easier" 
@@ -29,7 +30,7 @@ CRCCheck On
 
 ;Name and file 
 Name "GTDInbox" 
-OutFile "GTDInboxSetup-${GTD_VERSION}-${PRISM_VERSION}.exe" 
+OutFile "GTDInboxSetup-${INSTALL_VERSION}-${GTD_VERSION}-${PRISM_VERSION}.exe" 
 
 ;Default installation folder 
 InstallDir "$PROGRAMFILES\Prism" 
@@ -47,7 +48,7 @@ RequestExecutionLevel admin
 !define MUI_ICON "gtdinbox.ico"; There's some in the NSIS folder
 ;!define MUI_UNICON "---PATH TO SETUP ICON HERE---"
 !define MUI_HEADERIMAGE "logo-preview.png"
-!define MUI_WELCOMEPAGE   
+!define MUI_WELCOMEPAGE  
 !define MUI_UNINSTALLER 
 !define MUI_UNCONFIRMPAGE 
 !define MUI_FINISHPAGE   
@@ -55,6 +56,7 @@ RequestExecutionLevel admin
 ;Pages 
 
 !insertmacro MUI_PAGE_WELCOME 
+!insertmacro MUI_PAGE_DIRECTORY 
 Page custom nsDialogsPage
 !insertmacro MUI_PAGE_INSTFILES 
 
@@ -113,7 +115,7 @@ Section "Install Section" SecInstall
 SetShellVarContext current 
 
 ;  PRISM application data is recursively copied from yourAppPgmFiles to "$APPDATA\yourApp\Prism" 
-SetOutPath "$PROGRAMFILES\Prism\" 
+SetOutPath "$INSTDIR\" 
 File /r "prism.${PRISM_VERSION}.en-US.win32\prism\*"
 
 ;  PRISM webApp data is recursively copied from yourAppAppData to "$APPDATA\WebApps" 
@@ -137,7 +139,7 @@ done:
 
 
 ;  PRISM webApp data is recursively copied from yourAppAppData to "$APPDATA\WebApps" 
-SetOutPath "$PROGRAMFILES\Prism\extensions\{bcd47b5a-43be-433f-9051-7ce2cdf94ac0}\" 
+SetOutPath "$INSTDIR\extensions\{bcd47b5a-43be-433f-9051-7ce2cdf94ac0}\" 
 File /r /x .git /x .gitignore "GTDInbox-Extension\*"
 
 ;windirExists: 
@@ -145,7 +147,7 @@ File /r /x .git /x .gitignore "GTDInbox-Extension\*"
 WriteRegStr HKCU "Software\Prism" "" $INSTDIR 
 
 ;Create Shortcut links 
-CreateShortcut "$DESKTOP\${MUI_PRODUCT}.lnk" "$PROGRAMFILES\Prism\prism.exe" "-override $\"$APPDATA\WebApps\GTDInbox@prism.app\override.ini$\" -webapp GTDInbox@prism.app" "$APPDATA\WebApps\GTDInbox@prism.app\icons\default\gtdinbox.png"
+CreateShortcut "$DESKTOP\${MUI_PRODUCT}.lnk" "$INSTDIR\prism.exe" "-override $\"$APPDATA\WebApps\GTDInbox@prism.app\override.ini$\" -webapp GTDInbox@prism.app" "$INSTDIR\gtdinbox.ico"
 
 ;Create uninstaller 
 ;write uninstall information to the registry 
@@ -174,7 +176,7 @@ Delete "$INSTDIR\Uninstall.exe"
 RMDir /r "$INSTDIR\*.*"   
 
 RMDir "$INSTDIR"   
-RMDir "$PROGRAMFILES\Prism" 
+RMDir "$INSTDIR" 
 RmDir "$APPDATA\WebApps\GTDInbox@prism.app" 
 
 ;Delete Uninstaller And Unistall Registry Entries 
