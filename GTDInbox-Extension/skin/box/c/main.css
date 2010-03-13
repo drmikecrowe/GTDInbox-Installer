@@ -1,0 +1,426 @@
+.gtdi-box-section
+{
+	background: #fff;
+    padding: 0 7px;
+/*     border-bottom: 2px solid #E0ECFF; */
+	float: left;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 130%;
+    width: 146px;
+}
+
+.gtdi-box-section a
+{
+    color: #2A5DB0;
+}
+
+.gtdi-box-row
+{
+    position: relative;
+}
+.gtdi-box-row-server {
+    margin-bottom: 10px;
+}
+.gtdi-box-row-preferences
+{
+    margin-top: 5px;
+}
+
+.gtdi-box-row:hover
+{
+}
+
+
+
+
+
+.gtdi-box-row-link-dashboard
+{
+    margin-bottom: 6px;
+}
+
+.gtdi-box-row-popout
+{
+    position:absolute;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.gtdi-box-row-popped-out
+{
+    background-color: #FFFFCC;
+}
+
+
+
+
+.gtdi-news-bloglink-isnew
+{
+    font-weight:bold;
+}
+.gtdi-news-blog-lineitem-new
+{
+font-weight: bold;
+}
+a.gtdi-news-blog-title{
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	line-height: 1.6em;	
+	margin: -5px -10px 0 -10px;
+	padding: 3px 10px;
+	background: #9cb445;
+	color: #fff !important;
+}
+a.gtdi-news-blog-title:hover{
+	border: 1px solid 
+}
+
+
+
+
+
+.gtdi-box-popout-label-has_statuses
+{
+    font-weight:bold;
+}
+
+.gtdi-news{
+	font-size: 12px;
+}
+.gtdi-news .gtdi-news-blog{
+	border-bottom: 1px solid #ccc;
+	padding: 5px 10px;
+}
+
+
+.gtdi-news a{
+	color: #2A5DB0;
+}
+.gtdi-news-blog-lineitem,
+.gtdi-news-blog-subscribe{
+	border-top: 1px solid #eee;
+	display: block;
+	padding: 5px 10px 0 10px;
+	margin: 0 -10px 5px -10px;
+}
+.gtdi-news-bloglink-isnew{
+	position: relative;
+}
+.gti-box h2{
+	position: relative;
+}
+img.gtdi-news-new{
+	position: absolute;
+	top: 2px;
+	right: 0px;
+}
+.gtdi-box h2 img.gtdi-news-new{
+	top: 8px;
+}
+.gtdi-box-dashboard-popout{
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	border: 1px hidden;
+	cursor: pointer;
+}
+.gtdi-box-dashboard-popout:hover{
+	border: 1px solid #6694e3;
+}
+
+a.gtdi-news-twitter-title{
+	display: block;
+	-moz-border-radius: 30px;
+	background: #6694e3;
+	color: #fff !important;
+	margin: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	padding: 3px;
+}
+.gtdi-news-twitter-title img{
+	border: 0;
+	margin-bottom: -2px;
+}
+.gtdi-news-twitter-date-container{
+	padding: 5px 10px;
+	color: #666;
+	font-style: italic;
+}
+.gtdi-news-blog-subscribe{
+	padding-top: 5px;
+}
+
+
+
+
+
+
+/* GTDI-box - Sidebar item */
+
+
+
+.gtdi-box-section-expand {
+	background: #E0ECFF url(../i/group-closed.gif)  no-repeat;
+    background-position: 6px 6px;
+/* 	margin-top: -7px; */
+    margin-left: -7px;
+    cursor: pointer;
+	padding: 2px 0px;
+	width:138px;
+    padding-left: 22px;
+}
+.gtdi-box-section-expanded
+{
+    background:#E0ECFF url(../i/group-open.gif) no-repeat scroll 6px 6px !important;
+	padding-left:22px;
+	margin-bottom: 6px;
+}
+
+.gtdi-box-dashboard-popout
+{
+    position: absolute;
+    right: 0px;
+/*     padding: 3px; */
+    cursor: pointer;
+}
+
+
+
+
+
+div.gtdi-box-section div.gtdi-box-row:first-child{
+	margin-top: 6px !important;
+}
+div.gtdi-box-section div.gtdi-box-row:last-child{
+	margin-bottom: 6px !important;
+}
+
+/*
+div.gtdi-box-section:first-child div.gtdi-box-row:first-child{
+	margin-top: 0px !important;
+}
+*/
+
+
+
+.gtdi-popup-notice .gtdi-popup-notice-content-register{
+	background: #fff;
+	float: left;
+	padding: 20px;
+    padding-left:140px;
+    padding-right:140px;
+	position: relative;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#gtdi-register-body-account{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: #ffc;
+	padding: 4px;
+}
+.gtdi-popup-notice .gtdi-popup-notice-content-register{float: left;}
+.gtdi-popup-notice .gtdi-popup-notice-content-register #gtdi-register-passwordnotice {
+    margin-left: 120px;
+    font-size: 0.9em;
+    color: #777;
+}
+.gtdi-popup-notice .gtdi-popup-notice-content-register p{
+	margin-bottom: 1em;
+	line-height: 1.4em;
+}
+.gtdi-popup-notice .gtdi-popup-notice-content-register h2{
+	font-size: 20px !important;
+	margin-bottom: 1em;
+	line-height: 1.4em;
+
+}
+.gtdi-popup-notice .gtdi-popup-notice-content-register h3{
+	font-size: 16px !important;
+	font-weight: bold;
+	width: 100px;
+	float: left;
+	text-align: left;
+	margin-right: 20px;
+}
+
+#gtdi-register-body-hasaccount h3{
+	margin-top: 7px;
+}
+#gtdi-register-body-hasaccount button{
+	margin-left: 120px;
+}
+#gtdi-manage-account,
+#gtdi-forgotten-password {
+    margin-left: 120px;
+}
+
+#gtdi-register-body-hasaccount #gtdi-register-body-hasaccount,
+#gtdi-register-body-hasaccount #gtdi-register-body-noaccount{
+/* 	background: #e0ecff; */
+	padding: 10px 0;
+	border-top: 1px solid #ccc;
+	text-align: left;
+	width: 480px;
+	float: left;
+}
+
+.gtdi-popup-notice-content-register input[type="password"]{
+	height: 30px !important;
+	line-height: 60px !important;
+	font-size: 24px;
+	width: 160px;
+}
+.gtdi-popup-notice-content-register button{
+	width: 360px;
+}
+.gtdi-popup-notice-content-register button,
+.gtdi-box-account button{
+	border: 1px solid #85aac4;
+	background: #e0ecff url(../i/button-bg.png);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height: 40px !important;
+	line-height: 60px;
+	font-weight: bold;
+	font-size: 16px;
+	margin: .5em 0;
+	float: right;
+}
+.gtdi-box-account button{
+	height: 24px !important;
+	line-height: 40px;
+	font-size: 12px;
+	float: none;
+	display: block;
+	clear: both;
+}
+.gtdi-popup-notice-content-register table{
+	width: 360px;
+}
+.gtdi-popup-notice-content-register table td{
+	padding-bottom: 5px;
+}
+
+
+#gtdi-box-account-error-hide, #gtdi-box-error-hide {
+    position: absolute;
+    right: 0px;
+    margin-top: -15px;
+    cursor:pointer;
+	padding: 5px;
+}
+#gtdi-box-error-hide {
+    margin-top: -10px !important;
+}
+#gtdi-box-account-error-title {
+    font-weight:bold;
+}
+.gtdi-box-account-error-msg {
+/*     font-size: 0.8em; */
+}
+#gtdi-box-account-error-help {
+    cursor:pointer;
+    color: #2A5DB0;
+}
+
+.gtdi-box-account{
+	border-bottom: 1px solid #e0ecff;
+	padding: 5px 0;
+}
+#gtdi-box-account-error, #gtdi-box-account-error-retry, #gtdi-box-error{
+	background: #ffc;
+	font-size: 11px;
+	padding: 5px;
+	padding-top: 0;
+	margin: -9px -7px 0 -7px;
+}
+#gtdi-box-account-error-retry{
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.gtdi-box-account-type{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.gtdi-box-account-account_type_free a{
+    text-decoration: none;
+	color: #6694e3 !important;
+}
+.gtdi-box-account-account_type_plus a{
+    text-decoration: none;
+	color: #9DB544 !important;
+}
+
+#gtdi-box-account-error-cancelpassword,
+#gtdi-box-account-error-reregister
+{
+    color: #2A5DB0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#gtdi-box-error{
+    background-color: rgb(224, 102, 102);
+    padding-top: 4px;
+}
+#gtdi-box-error-title
+{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.gtdi-popup-notice-boxerrorreporter #gtdi-boxerrorreporter-errors-container
+{
+    font-size: 0.8em;
+}
+.gtdi-popup-notice-boxerrorreporter #gtdi-boxerrorreporter-errors-list
+{
+    color: #555;
+}
+.gtdi-popup-notice-boxerrorreporter #gtdi-boxerrorreporter-detail
+{
+    width: 100%;
+    height: 80px;
+}
+.gtdi-popup-notice-boxerrorreporter #gtdi-boxerrorreporter-send-info
+{
+    color: #555;
+    font-size: 0.8em;
+}
+
+
+.gtdi-versioninfo {
+    font-size: 0.9em;
+    color: #000 !important;
+    opacity: 0.6;
+}
+.gtdi-legalnotice-link a {
+    font-size: 0.9em;
+    color: #000 !important;
+    opacity: 0.6;
+    text-decoration: none;
+}
+.gtdi-legalnotice-link a:hover {
+    text-decoration: underline;
+}
+
+#gtdi-box-server-notifications-version {
+    margin-top: 7px;
+}
+#gtdi-box-server-notifications-version a
+{
+    font-size:0.9em;
+    color: #AE0000;
+}

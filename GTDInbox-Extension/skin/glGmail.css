@@ -1,0 +1,12 @@
+
+.lightbox
+{
+	background-color:#000;
+	back\ground-color:transparent;
+	background-image:url(overlay.png);
+	z-index:5000;
+	position:fixed;
+	top:0px;
+	left:0px;
+	overflow:auto;
+}

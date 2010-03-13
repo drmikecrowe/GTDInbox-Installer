@@ -1,0 +1,2 @@
+var gtdThreadListView=giUIObject.extend({_threadListCommands:null,connect:function(main){giLogger.log("st","glThreadListView.connect",main?main.pageId:giLogger.UNKNOWN_PAGE_ID);this.base(main);if(main.prefs.getPref("components.thread_list.preview_button.enabled")||main.prefs.getPref("components.thread_list.preview_button.enabled"))this._threadListCommands=main.getUIObject("threadListCommands")},disconnect:function(){if(this._threadListCommands){this._threadListCommands.disconnect();this._threadListCommands=
+null}this.base()}});

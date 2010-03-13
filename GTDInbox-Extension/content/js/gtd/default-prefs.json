@@ -1,0 +1,58 @@
+{
+    "shown_welcome": false,
+    "shown_welcome_plus": false,
+    "allow_multiple_statuses": false,
+    "threads_viewer_last_viewswitch": "",
+    "labels": {
+        "types": {
+            "statuses": {
+                "prefix": "S/",
+                "core": {
+                    "today": {"name":"Today", "excludeFromOptions":true, "notExclusive":true},
+                    "next_action": {"name":"Next", "autoInstall":true},
+                    "action": {"name":"Action", "autoInstall":true},
+                    "some_day": {"name":"Some Day", "autoInstall":true},
+                    "waiting_on": {"name":"Waiting On", "autoInstall":true},
+                    "finished": {"name":"Finished", "autoInstall":true}
+                }
+            },
+            "projects": { "prefix": "P/", "isPrimary":true },
+            "contexts": { "prefix": "C/", "isPrimary":true },
+            "references": { "prefix": "R/" },
+            "old": { "prefix": "Old/" },
+            "misc": { "prefix": "" }
+        }
+    },
+    "labelling_box": {},
+    "components": {
+        "navigation": {
+            "types": { "enabled": true },
+            "gmail_labels_box": {
+                "enabled": true,
+                "recent_hidden": true
+            }
+        },
+        "thread_list": {
+            "preview_button": { "enabled": true }
+        },
+        "conversation": {
+            "labelling_box": { "enabled": true },
+            "reply_to_self": { "enabled": true, "filter_name": "self" },
+            "send_and": {"enabled":true}
+        },
+        "search": {
+            "search_button": { "enabled": true }
+        },
+        "compose": {
+            "compose_personal": { "enabled": true, "filter_name": "self" },
+            "compose_personal_tabs": { "enabled": true },
+            "compose_labels": { "enabled": true },
+            "send_and": {"enabled":true}
+        },
+        "right_click": {
+            "thread_preview": { "enabled": true },
+            "label_popup": { "enabled": true },
+            "contact_popup": { "enabled": true }
+        }
+    }
+}

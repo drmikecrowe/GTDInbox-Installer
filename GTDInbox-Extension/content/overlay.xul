@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<overlay id="gtdinbox-browser-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+
+  <!-- Order is CRITICAL - DO NOT RE-ORDER WITHOUT TESTING -->
+
+  <!-- Start: Utilities and Core Dependencies -->
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/oohelper.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/debug.mozilla.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/eventDispatcher.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/callback.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giVersionCompare.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/gimd5.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/util.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giSafeJS.mozilla.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giMultiToOne.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giEventsContainer.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giFileIO.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giJson.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giUrl.mozilla.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giXMLHttpRequest.mozilla.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giRss.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giResizer.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giI18N.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/util/giScrollTopRestorer.js" />
+  <!-- End: Utilities and Core Dependencies -->
+
+
+  <!-- Start: GTDInbox Core -->
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giPluginManager.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giLoadFailMonitor.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giPlugin.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/ui/giMainPageUIPlugin.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/ui/giUIObject.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/ui/giPopupNotice.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giPrefManager.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giPluginPrefManager.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giPluginMigrator.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giServerAccount.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giServerErrorReport.js" />
+  <!-- End: GTDInbox Core -->
+
+  <!-- Start: GMail Lib JS -->
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glUIWidget.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glUIView.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glComposeView.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glContactsView.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glConversationView.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glThreadListView.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glThreadListTable.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glSearchBox.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glActionsHeader.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glNavBar.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glLightbox.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glConversationReplyHandler.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glComposeBox.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glSettingsView.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glNavModule.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/ui/glDropdown.js" />
+  
+  
+
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glThread.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glThreadMessage.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glThreadContainer.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glTrafficWatcher.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glTrafficWatcherTracer.mozilla.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glEnvironment.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glRequest.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glRequestOriginalMsg.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glDataObject.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glActionBuffer.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glSearch.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glPageWrapper.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glActionManager.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glGmail.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glActionDOMBuffer.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glOffline.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glSettings.js" />
+  <!-- End: GMail Lib JS -->
+  
+  
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxSection.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxBox.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxAbout.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxNews.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxError.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxErrorReporter.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxServer.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxRegister.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxOfflineWarning.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/ui/boxLoadWarning.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/box/boxMain.js" />
+
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdMainView.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdComposeTabs.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdComposeView.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdContactsView.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdComposePersonal.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdConversationView.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdThreadListView.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdThreadListCommands.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdSearchButton.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabellingBox.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabellingDropdown.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabelsMenu.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdThread.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabelsTree.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdThreadListPreviewer.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdComposeLabels.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdBox.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdWelcome.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdSetup.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabelsInfo.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdSettingsView.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdStatsDayBox.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdGmailLabelsBox.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdConversationActionAndMove.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdConversationReplyToSelf.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdConversationSendButton.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/browser/gtdBrowserPopup.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/browser/gtdBrowser.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/browser/gtdBrowserThread.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/browser/gtdBrowserThreads.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/browser/gtdBrowserThreadsContact.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/browser/gtdBrowserThreadsLabel.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/browser/gtdBrowserThreadsOverview.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/browser/gtdBrowserThreadsSearch.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/browser/gtdBrowserThreadsView.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadList.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListDownloadProgress.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListGroup.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListThread.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListGroupBy.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListGroupByProject.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListGroupByContext.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListGroupByList.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListGroupByContact.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilder.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilderLabelsTree.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilderLabelMenu.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilderSidebar.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdViews.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdLabelsData.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdEnvironment.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdRecent.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdPreLabeler.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdStatusThreadContainer.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/migrator.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdMainPagePlugin.js" />
+    
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/prefs/prefsBase.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/prefs/prefsMainPagePlugin.js" />
+
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/common_backgroundPage/giI18NBackground.js" />
+
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/mozilla_backgroundPage/giPageManager.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/mozilla_backgroundPage/main.js" />
+</overlay>
+

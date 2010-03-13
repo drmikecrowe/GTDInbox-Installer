@@ -1,0 +1,1 @@
+var gtdContactsView=giUIObject.extend({});

@@ -1,0 +1,1 @@
+var glUIWidget=giBase.extend({_isConnected:null,_gmail:null,constructor:function(){if(this.constructor===glUIWidget)throw new Error("Cannot be instantiated");},connect:function(gmail){this._gmail=gmail;this._isConnected=true},disconnect:function(){this._gmail=null;this._isConnected=false},isCacheable:function(){return true},isConnected:function(){return this._isConnected}});

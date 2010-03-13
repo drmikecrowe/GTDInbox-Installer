@@ -1,0 +1,1 @@
+var gtdThreadListGroupByList=gtdThreadListGroupBy.extend({constructor:function(gtd){this.base(gtd);this.id="list";this.displayName=giI18N.getString("ThreadList.GroupBy."+this.id);this.iconSrc=giUrl.getURL("skin/gtd/i/gtdi-groupby-list.png");this._all=giI18N.getString("ThreadList.GroupBy.list.all")},groupThread:function(thread){return[[this._all]]},sortThreads:null});

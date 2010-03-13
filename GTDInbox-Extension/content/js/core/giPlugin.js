@@ -1,0 +1,1 @@
+var giPlugin=giBase.extend({manifestURI:null,load:function(accountData,pageBase){throw new Error("Must implement load method");},unload:function(){throw new Error("Must implement unload method");},getPath:function(path){return this.manifestURI.resolve(path)}});

@@ -1,0 +1,635 @@
+{
+	"Box.about.blog": {
+			"message": "GTDInbox News"
+	},
+	"Box.about.support": {
+			"message": "Support / Help"
+	},
+	"Box.about.preferences": {
+			"message": "Preferences"
+	},
+	"Box.about.manageaccount": {
+			"message": "Manage account"
+	},
+	"Box.about.discoverpremium": {
+			"message": "Buy GTDInbox Plus"
+	},
+	"Box.expander.boxabout": {
+			"message": "About"
+	},
+	"Box.about.legalnotice": {
+			"message": "Legal Notice"
+	},
+	"Box.about.versioninfo.beta": {
+			"message": "Beta"
+	},
+	"Box.OfflineWarning": {
+			"message": "GTDInbox is running with minimal features because Gmail is in Offline (Unstable) mode. "
+	},
+    "Box.LoadWarning.xhr": {
+            "message": "GTDInbox could not reach Gmail due to browser security settings. To correct it please"
+    },
+    "Box.LoadWarning.xhr.faq": {
+            "message": "see the faq"
+    },
+	"News.blog.title": {
+			"message": "GTDInbox Blog"
+	},
+	"News.blog.subscribe": {
+			"message": "Subscribe by email"
+	},
+	"News.blog.new.title": {
+			"message": "%1 new blog posts"
+	},
+	"News.twitter.title": {
+			"message": "GTDInbox on Twitter"
+	},
+	"News.twitter.lastUpdate": {
+			"message": "Last updated"
+	},
+	"Box.error.title": {
+			"message": "Error Notice"
+	},
+	"Box.error.notice.singular": {
+			"message": "1 error has occurred."
+	},
+	"Box.error.notice": {
+			"message": "%1 errors have occurred."
+	},
+	"Box.error.report": {
+			"message": "Tell the GTDInbox Team"
+	},
+	"Box.error.report.success": {
+			"message": "Thank you! The GTDInbox team has received notification of your error report and will look into it as soon as possible."
+	},
+	"Box.error.report.fail": {
+			"message": "Oops! We could not send your error report to the GTDInbox server. Please try again in a few moments. "
+	},
+	"Box.Server.register": {
+			"message": "Register"
+	},
+	"Box.Server.title": {
+			"message": "Account"
+	},
+	"Box.Server.manage.tooltip": {
+			"message": "Click to manage account"
+	},
+	"Box.Server.types.account_type_free": {
+			"message": "Free"
+	},
+	"Box.Server.types.account_type_plus": {
+			"message": "Plus"
+	},
+	"Box.Server.upgrade": {
+			"message": "Upgrade"
+	},
+	"Box.Server.recovered.ready": {
+			"message": "Account ready"
+	},
+	"Box.Server.recovered.refresh": {
+			"message": "Please refresh Gmail"
+	},
+	"Box.Server.problem.title": {
+			"message": "Account Error"
+	},
+	"Box.Server.problem.help": {
+			"message": "Help"
+	},
+	"Box.Server.problem.retry.notice": {
+			"message": "Will retry in"
+	},
+	"Box.Server.problem.retry.seconds": {
+			"message": "seconds"
+	},
+	"Box.Server.problem.retry.retrying": {
+			"message": "Retrying..."
+	},
+	"Box.Server.problem.types.db": {
+			"message": "Server problem: could not read database."
+	},
+	"Box.Server.problem.types.serverFail": {
+			"message": "The server is temporarily inaccessible."
+	},
+	"Box.Server.problem.types.unknownCredentials": {
+			"message": "Unknown account or wrong password."
+	},
+	"Box.Server.problem.types.unknownCredentials.cancelpassword": {
+			"message": "Cancel"
+	},
+	"Box.Server.problem.types.unknownCredentials.cancelpassword.tooltip": {
+			"message": "Clear you GTDInbox Account password from your Preferences and stop this message"
+	},
+	"Box.Server.problem.types.unrecognisedAccount": {
+			"message": "Unrecognised account type."
+	},
+	"Box.Server.problem.types.unrecognisedErrorType": {
+			"message": "There was an unrecognised problem with the data from the server."
+	},
+	"Box.Server.problem.types.exception": {
+			"message": "An exception occurred."
+	},
+	"Box.Server.problem.types.unknownCredentials.reregister": {
+			"message": "Re-Register"
+	},
+	"Box.Server.problem.types.unknownCredentials.reregister.tooltip": {
+			"message": "Verify your GTDInbox password"
+	},
+	"Box.Server.notifications.newVersion": {
+			"message": "GTDInbox %1 Available"
+	},
+	"Box.Register.savePassword.noPasswordMatch": {
+			"message": "Your passwords did not match. Please re-enter them and try again."
+	},
+	"Box.Register.savePassword.noPassword": {
+			"message": "Please supply a password."
+	},
+	"Box.Register.savePassword.serverFail": {
+			"message": "Could not connect to the GTDInbox server. Please try again in a few moments."
+	},
+	"Box.Register.savePassword.unknownCredentials": {
+			"message": "Your password did not match your account. Please re-enter it and try again. "
+	},
+	"Box.Register.savePassword.success": {
+			"message": "Your GTDInbox account has been successfully set up for %1 on this computer. Do you want to refresh Gmail now"
+	},
+	"Labels.Types.statuses": {
+			"message": "Statuses"
+	},
+	"Labels.Types.projects": {
+			"message": "Projects"
+	},
+	"Labels.Types.contexts": {
+			"message": "Contexts"
+	},
+	"Labels.Types.references": {
+			"message": "References"
+	},
+	"Labels.Types.old": {
+			"message": "Old"
+	},
+	"Labels.Types.misc": {
+			"message": "Labels"
+	},
+	"Labels.Popout.Title": {
+			"message": "Open the GTDInbox Label Browser"
+	},
+	"Search.Button": {
+			"message": "Search in Popup"
+	},
+	"Compose.Personal": {
+			"message": "Compose Self"
+	},
+	"Compose.Mail": {
+			"message": "Compose Mail"
+	},
+	"ThreadListUI.GTDBox.Tooltip": {
+			"message": "Preview in Popup"
+	},
+	"ThreadListUI.GTDBox.Popup.lineitem.preview": {
+			"message": "Preview in Popup"
+	},
+	"ThreadListUI.GTDBox.Popup.lineitem.archive": {
+			"message": "Archive"
+	},
+	"ThreadListUI.GTDBox.Popup.lineitem.finish": {
+			"message": "Finish (and archive)"
+	},
+	"ThreadListUI.GTDBox.Popup.lineitem.action": {
+			"message": "Action (and archive)"
+	},
+	"ThreadListUI.GTDBox.Popup.lineitem.del": {
+			"message": "Delete"
+	},
+	"ThreadListUI.GTDBox.Popup.lineitem.spam": {
+			"message": "Mark as Spam"
+	},
+	"Labelling.labels": {
+			"message": "Labels"
+	},
+	"Labelling.statuses.today": {
+			"message": "Today"
+	},
+	"Labelling.statuses.next_action": {
+			"message": "Next"
+	},
+	"Labelling.statuses.action": {
+			"message": "Action"
+	},
+	"Labelling.statuses.some_day": {
+			"message": "Someday"
+	},
+	"Labelling.statuses.waiting_on": {
+			"message": "Waiting On"
+	},
+	"Labelling.statuses.finished": {
+			"message": "Finished"
+	},
+	"Labelling.statuses.unread": {
+			"message": "Unread"
+	},
+	"Labelling.dropdown.recent": {
+			"message": "Recent"
+	},
+	"Labelling.dropdown.create": {
+			"message": "Create Label"
+	},
+	"Labelling.dropdown.create.prompt": {
+			"message": "Create New %1 Label:"
+	},
+	"Labelling.dropdown.projects.title": {
+			"message": "Projects"
+	},
+	"Labelling.dropdown.contexts.title": {
+			"message": "Contexts"
+	},
+	"Labelling.dropdown.references.title": {
+			"message": "References"
+	},
+	"Labelling.buttons.archive": {
+			"message": "Archive"
+	},
+	"Labelling.buttons.archive.tooltip": {
+			"message": "Archive"
+	},
+	"Labelling.buttons.archive.next.tooltip": {
+			"message": "Archive and go to the next thread"
+	},
+	"Labelling.buttons.archived": {
+			"message": "Archived"
+	},
+	"Labelling.buttons.finished.tooltip": {
+			"message": "Finish"
+	},
+	"Labelling.notify.deleted": {
+			"message": "Deleted"
+	},
+	"Labelling.notify.spam": {
+			"message": "Spam"
+	},
+	"ActionAndMove.button.archive": {
+			"message": "Archive"
+	},
+	"ActionAndMove.button.tooltip.archive": {
+			"message": "Archive and return"
+	},
+	"ActionAndMove.button.tooltip.prev.archive": {
+			"message": "Archive and move to the previous message"
+	},
+	"ActionAndMove.button.tooltip.next.archive": {
+			"message": "Archive and move to the next message"
+	},
+	"ActionAndMove.button.delete": {
+			"message": "Delete"
+	},
+	"ActionAndMove.button.tooltip.delete": {
+			"message": "Delete and return"
+	},
+	"ActionAndMove.button.tooltip.prev.delete": {
+			"message": "Delete and move to the previous message"
+	},
+	"ActionAndMove.button.tooltip.next.delete": {
+			"message": "Delete and move to the next message"
+	},
+	"ActionAndMove.button.report_spam": {
+			"message": "Spam"
+	},
+	"ActionAndMove.button.tooltip.report_spam": {
+			"message": "Report as Spam and return"
+	},
+	"ActionAndMove.button.tooltip.prev.report_spam": {
+			"message": "Report as Spam and move to the previous message"
+	},
+	"ActionAndMove.button.tooltip.next.report_spam": {
+			"message": "Report as Spam and move to the next message"
+	},
+	"ActionAndMove.button.move": {
+			"message": "Move"
+	},
+	"ActionAndMove.button.tooltip.move": {
+			"message": "Move back to the inbox"
+	},
+	"ActionAndMove.button.tooltip.prev.move": {
+			"message": "Move to the previous message"
+	},
+	"ActionAndMove.button.tooltip.next.move": {
+			"message": "Move to the next message"
+	},
+	"ActionAndMove.button.finish": {
+			"message": "Finish"
+	},
+	"ActionAndMove.button.tooltip.finish": {
+			"message": "Finish and move back to the inbox"
+	},
+	"ActionAndMove.button.tooltip.prev.finish": {
+			"message": "Finish and move to the previous message"
+	},
+	"ActionAndMove.button.tooltip.next.finish": {
+			"message": "Finish and move to the next message"
+	},
+	"ActionAndMove.button.send": {
+			"message": "Send"
+	},
+	"ActionAndMove.button.tooltip.send": {
+			"message": "Send and return to the inbox"
+	},
+	"ActionAndMove.button.tooltip.prev.send": {
+			"message": "Send and move to the previous message"
+	},
+	"ActionAndMove.button.tooltip.next.send": {
+			"message": "Send and move to the next message"
+	},
+	"ActionAndMove.button.send_eom": {
+			"message": "Send EOM"
+	},
+	"ActionAndMove.button.tooltip.send_eom": {
+			"message": "Send (with No Reply Expected) and return to the inbox"
+	},
+	"ActionAndMove.button.tooltip.prev.send_eom": {
+			"message": "Send (with No Reply Expected) and move to the previous message"
+	},
+	"ActionAndMove.button.tooltip.next.send_eom": {
+			"message": "Send (with No Reply Expected) and move to the next message"
+	},
+	"LabelDOM.expander.opener": {
+			"message": "Show children"
+	},
+	"LabelDOM.expander.closer": {
+			"message": "Hide children"
+	},
+	"ThreadList.Loadbox.loading": {
+			"message": "Loading %1 of %2 threads"
+	},
+	"ThreadList.Loadbox.partialComplete": {
+			"message": "Downloaded the most recent %1 of %2 threads."
+	},
+	"ThreadList.Loadbox.partialComplete.all": {
+			"message": "Download All"
+	},
+	"ThreadList.NoThreads": {
+			"message": "No threads to show!"
+	},
+	"ThreadList.Thread.Attachment.title": {
+			"message": "Has attachment"
+	},
+	"ThreadList.Thread.DateFormat": {
+			"message": "mm/dd/yy"
+	},
+	"ThreadList.GroupBy.list": {
+			"message": "List"
+	},
+	"ThreadList.GroupBy.list.all": {
+			"message": "All"
+	},
+	"ThreadList.GroupBy.project": {
+			"message": "Project"
+	},
+	"ThreadList.GroupBy.context": {
+			"message": "Context"
+	},
+	"ThreadList.GroupBy.contact": {
+			"message": "Contact"
+	},
+	"ThreadList.GroupBy.misc": {
+			"message": "Misc"
+	},
+	"LabelsMenu.Title": {
+			"message": "Labels"
+	},
+	"Browser.Types.label.statuses": {
+			"message": "STATUS"
+	},
+	"Browser.Types.label.projects": {
+			"message": "PROJECT"
+	},
+	"Browser.Types.label.contexts": {
+			"message": "CONTEXT"
+	},
+	"Browser.Types.label.references": {
+			"message": "REFERENCE"
+	},
+	"Browser.Types.search": {
+			"message": "SEARCH"
+	},
+	"Browser.Types.view": {
+			"message": "VIEW"
+	},
+	"Browser.Types.overview": {
+			"message": "OVERVIEW"
+	},
+	"Browser.Types.contact": {
+			"message": "CONTACT"
+	},
+	"Browser.Types.label.misc": {
+			"message": "LABEL"
+	},
+	"Views.all.name": {
+			"message": "Recent"
+	},
+	"Views.files.name": {
+			"message": "Files"
+	},
+	"Browser.Popup.Close": {
+			"message": "Close"
+	},
+	"Browser.Popup.Back": {
+			"message": "Back"
+	},
+	"Browser.Popup.Overview": {
+			"message": "Overview"
+	},
+	"Browser.Popup.openInGmail": {
+			"message": "Open in Gmail (hold Shift to use new tab)"
+	},
+	"Browser.Threads.Tabs.all": {
+			"message": "All"
+	},
+	"Browser.Threads.Tabs.recent": {
+			"message": "Recent"
+	},
+	"Browser.Threads.Tabs.files": {
+			"message": "Files"
+	},
+	"Browser.Threads.Tabs.Containers.statuses": {
+			"message": "To Do"
+	},
+	"Browser.Threads.Tabs.Containers.views": {
+			"message": "Views"
+	},
+	"Thread.Open": {
+			"message": "Open Message in Gmail"
+	},
+	"Browser.Thread.Paging.next": {
+			"message": "Next"
+	},
+	"Browser.Thread.Paging.prev": {
+			"message": "Previous"
+	},
+	"Browser.Thread.Paging.of": {
+			"message": "of"
+	},
+	"NoLabels": {
+			"message": "Get started by adding labels that start with %1."
+	},
+	"LabelsInfo.desc.statuses": {
+			"message": "Define the current status of an email task (e.g. S/Action, S/Waiting On, S/Some Day). Status labels provide the foundation for 'actioning' emails into tasks."
+	},
+	"LabelsInfo.desc.projects": {
+			"message": "Project labels group related emails and tasks into projects. Can be hierarchical (e.g. P/MyProject/MySubProject)."
+	},
+	"LabelsInfo.desc.contexts": {
+			"message": "Context labels group related emails and tasks by context. This could be a physical place (C/Office, C/Home), a physical activity (C/OnPhone), or perhaps a group of people (C/ProjectXTeam)."
+	},
+	"LabelsInfo.desc.references": {
+			"message": "Reference labels identify an email as a type of resource for easier retrieval (e.g. R/MeetingNotes, R/Invoices)."
+	},
+	"LabelsInfo.desc.old": {
+			"message": "Used to retain labels that are no longer actively used, e.g. Old/P/MyProject"
+	},
+	"NoLabels.Manage": {
+			"message": "Manage Labels"
+	},
+	"NoLabels.Create": {
+			"message": "Create New Label"
+	},
+	"NoLabels.Create.Prompt": {
+			"message": "Create New %1 Label:"
+	},
+	"Box.DashboardShortcut.title": {
+			"message": "Show Overview in popup"
+	},
+	"Box.setup.msg": {
+			"message": "The GTD features do not appear to be properly set up for this account."
+	},
+	"Box.setup.install": {
+			"message": "Setup GTDInbox"
+	},
+	"Box.setup.complete": {
+			"message": "Your labels have been added but Gmail needs refreshing to complete the installation. Refresh Gmail now?"
+	},
+	"Box.expander.gtdshortcuts": {
+			"message": "Quick Views"
+	},
+	"Box.expander.gtdtypes": {
+			"message": "Reviews"
+	},
+	"Box.label": {
+			"message": "Show active %1 items in Gmail (use Shift+click to see all)"
+	},
+	"Box.showall": {
+			"message": "Show all %1 in Gmail"
+	},
+	"Box.popup": {
+			"message": "Show %1 in GTDInbox Label Browser"
+	},
+	"Box.filterextend": {
+			"message": "Filter %1"
+	},
+	"Box.gtdtypes.statuses": {
+			"message": "To Do"
+	},
+	"Box.gtdtypes.statuses.overview": {
+			"message": "See Overview in popup"
+	},
+	"Box.gtdtypes.statuses.overview.tooltip": {
+			"message": "Open the popup containing all active items."
+	},
+	"Box.gtdtypes.row.tooltip": {
+			"message": "Click to see %1, including any active items"
+	},
+	"Box.gtdtypes.statuses.tooltip": {
+			"message": "Click to see all active items"
+	},
+	"Box.gtdtypes.contacts": {
+			"message": "People"
+	},
+	"Box.prefswarning.msg": {
+			"message": "Your GTDInbox preferences appear malformed, which may break several features."
+	},
+	"Box.prefswarning.faq": {
+			"message": "See FAQ"
+	},
+	"LabelsInfo.install": {
+			"message": "Set up GTDInbox"
+	},
+	"LabelsInfo.categories.prefix": {
+			"message": "Prefix:"
+	},
+	"GmailLabelsBox.Recent.Title": {
+			"message": "Recent Labels"
+	},
+	"GmailLabelsBox.Recent.Title.tooltip": {
+			"message": "Toggle the visibility of Gmail's recent labels"
+	},
+	"ReplyToSelf": {
+			"message": "Reply to Self"
+	},
+	"ConversationSendButton.Statuses.selected": {
+			"message": "selected"
+	},
+	"ConversationSendButton.Statuses.tooltip": {
+			"message": "Change Status"
+	},
+	"ConversationSendButton.Archive": {
+			"message": "Archive"
+	},
+	"ConversationSendButton.Statuses.None": {
+			"message": "No Status"
+	},
+	"ConversationSendButton.EOM": {
+			"message": "NO REPLY EXPECTED"
+	},
+	"ConversationSendButton.SendNew": {
+			"message": "Send and..."
+	},
+	"SearchBuilder.LabelsMenu.todo.title": {
+			"message": "To Do:"
+	},
+	"SearchBuilder.LabelsMenu.views.title": {
+			"message": "Views:"
+	},
+	"LegalNotice": {
+			"message": "GTDInbox and its authors are not affiliated with, approved or endorsed by David Allen or the David Allen Company. GTD and Getting Things Done are registered trademarks of the David Allen Company. For more information on GTD, the David Allen Company, and related products, please visit DavidCo.com."
+	},
+    "Prefs.boxlink": {
+            "message": "Preferences"
+    },
+    "Prefs.confirmRefresh": {
+            "message": "You have to reload Gmail for your changes to take effect.\nReload now?"
+    },
+	"Prefs.gtd.labels.types.button.add.getType": {
+			"message": "Enter a name for the new category:"
+	},
+	"Prefs.gtd.labels.types.button.add.getPrefix": {
+			"message": "Enter a prefix for %1:"
+	},
+	"Prefs.gtd.labels.types.button.add.already_exists": {
+			"message": "The category %1 already exists! Nothing will be added."
+	},
+	"Prefs.gtd.labels.types.button.remove.confirm": {
+			"message": "Remove the %1 category?"
+	},
+	"Prefs.gtd.labels.types.button.remove.cannot_remove_statuses": {
+			"message": "The Statuses category is not removeable!"
+	},
+	"Prefs.gtd.password.noMatch": {
+			"message": "Your passwords did not match. Please reenter them and try again."
+	},
+	"Prefs.gtd.password.confirmClear": {
+			"message": "Are you sure you want to delete your password? This will stop GTDInbox from accessing your account."
+	},
+    "Prefs.gtd.password.loading": {
+            "message": "Refreshing..."
+    },
+    "Prefs.gtd.password.verified.success": {
+            "message": "Password verified ok."
+    },
+    "Prefs.gtd.password.verified.fail": {
+            "message": "Password failed - please check."
+    },
+    "Prefs.gtd.password.no_password": {
+            "message": "No password entered."
+    },
+    "ServerErrorReport.confirmApproveHTML": {
+            "message": "GTDInbox would like to include your Gmail layout.\n\nHowever, as it may include some text from your emails, we would like to check this is okay with you. (We do not store this information for more than 14 days - just while we fix the problem, then we delete it from our systems - and it's extremely useful).\n\n\nOkay to include Gmail layout information?"
+    }
+}

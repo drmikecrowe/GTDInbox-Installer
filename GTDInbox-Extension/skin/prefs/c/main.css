@@ -1,0 +1,29 @@
+.gtdi-popup-notice-content-prefsbase {
+    width: 90%;
+}
+
+.gtdi-popup-notice-content-prefsbase #preferences-pane {
+    background-color: #efefef;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.gtdi-popup-notice-content-prefsbase #preferences-pane .gtdi-pref-textboxcontainer label {
+    width: 130px;
+    display:block;
+    float:left;
+}
+
+.gtdi-popup-notice-content-prefsbase #preferences-pane button
+{
+    width: 200px;
+}
+
+.gtdi-popup-notice-content-prefsbase #preferences-pane h2 {
+    margin-top: 30px;
+}
+
+.gtdi-pref-smallprint{
+    font-size: 0.9em;
+    color: #555;
+}

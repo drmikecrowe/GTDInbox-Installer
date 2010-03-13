@@ -1,0 +1,1841 @@
+.conversation-labels{
+margin-left:10px;
+margin-right:10px;
+}
+.compose-labels{
+margin-left:5px;
+margin-right:5px;
+}
+
+.gtdi a{
+	color: #2A5DB0;
+}
+#gtdi-browser-container{
+	width: 750px;
+	padding-top: 10px;
+	padding-right: 10px;
+	
+}
+#gtdi-browser{
+	background: #e0ecff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	display: table-cell;
+	-moz-border-radius: 10px;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 11px;
+	height: 440px;
+	position: relative;
+	width: 740px;
+}
+#gtdi-header{
+	background: url(../i/gtdi-toolbar.png) top repeat-x;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	/*border-bottom: 1px solid #ddd;*/
+	height: 26px;
+	padding: 5px 10px;
+}
+#gtdi-header div.gtdi-branding{
+	background: url(../i/gtdi-logo-dash.png) 0 0 no-repeat;
+	width: 32px;
+	height: 30px;
+	margin-top: -3px;
+	margin-right: 10px;
+	float: left;
+    cursor: pointer;
+}
+#gtdi-header #gtdi-context, #gtdi-groupby, #gtdi-search{
+	display: block;
+	float: left;
+}
+#gtdi-header #gtdi-context{
+	line-height: 22px;
+}
+#gtdi-header #gtdi-open-in-gmail
+{
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    left: 5px;
+}
+
+/* Backbutton stuff */
+#gtdi-backhome{
+	display: block;
+	float: left;
+	width: 80px;
+	height: 31px;
+}
+#gtdi-backhome li{
+	display: block;
+	float: left;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+#gtdi-backhome #gtdi-backbutton{
+	background:  url(../i/gtdi-header-backbutton.png) top left no-repeat;
+	height: 31px;
+	width: 33px;
+}
+#gtdi-backhome #gtdi-backbutton.gtdi-active{
+	background: url(../i/gtdi-header-backbutton-a.png) top left no-repeat;
+	cursor: pointer;
+	height: 31px;
+	width: 33px;
+}
+#gtdi-backhome #gtdi-homebutton{
+	background: url(../i/gtdi-header-homebutton.png) top left no-repeat;
+	cursor: pointer;
+	height: 31px;
+	width: 47px;
+}
+
+#gtdi-header #gtdi-context span{
+	margin-top: 3px;
+	-moz-border-radius: 15px;
+	border:1px solid #888888;
+	padding:4px 6px 2px;
+}
+#gtdi-groupby, #gtdi-search{
+	margin-top: 5px;
+	float: right;
+}
+#gtdi-context{
+	margin-top: 5px;
+}
+#gtdi-context h1{
+	display: inline;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-right: 5px;
+}
+#gtdi-context #gtdi-context-selector{
+	margin-top: -5px;
+}
+#gtdi-groupby li{
+	float: left;
+	margin-top: -2px;
+	width: 31px;
+}	
+#gtdi-groupby a{
+	display: block;
+	height: 21px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+#gtdi-groupby a#gtdi-groupby-list{
+	background: url(../i/gtdi-switchview.png) top left no-repeat;
+}
+#gtdi-groupby a#gtdi-groupby-project{
+	background: url(../i/gtdi-switchview.png) top right no-repeat;
+}
+
+#gtdi-groupby a#gtdi-groupby-list.gtdi-active{
+	background: url(../i/gtdi-switchview.png) bottom left no-repeat;
+}
+#gtdi-groupby a#gtdi-groupby-project.gtdi-active{
+	background: url(../i/gtdi-switchview.png) bottom right no-repeat;
+}
+
+#gtdi-search input{
+	background: url(../i/gtdi-search-icon.png) 2px no-repeat;
+	border: 1px solid #ccc;
+	height: 18px;
+	line-height: 18px;
+	margin-top: -4px;
+	padding: 3px 5px 0 15px;
+	width: 108px;
+}
+.gtdi-back{
+	background: url(../i/gtdi-back.png) top left no-repeat;
+	display: block;
+	float: left;
+	height: 23px;
+	text-indent: -9999px;
+	width: 52px;
+}
+.gtdi-back a{
+	display: block;
+	height: 23px;
+}
+#gtdi-breadcrumb{
+	float: left;
+	width: 400px;
+}
+#gtdi-breadcrumb h2{
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 10px;
+	line-height: 28px;
+}
+#gtdi-breadcrumb h2 a{
+	color: #2A5DB0;
+	text-decoration: none;
+}
+#gtdi-breadcrumb h2 a:hover{
+	text-decoration: underline;
+}
+#gtdi-paging{
+	position: absolute;
+	top: 16px;
+	right: 30px;
+}
+.gtdi-paging-prev, .gtdi-paging-next{
+	background-image: url(../i/gtdi-prev.png);
+	background-position: center 8px;
+	background-repeat: no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 10px;
+}
+.gtdi-paging-next{
+	background-image: url(../i/gtdi-next.png);
+}
+
+#gtdi-body{
+	display: table;
+	width: 100%;
+}
+#gtdi-menu{
+	display: block;
+	float: left;
+	border-right: 1px solid #ccc;
+	width: 144px;
+}
+
+#gtdi-menu h3{
+	text-transform: uppercase;
+	margin: 15px 10px 10px 10px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #7f8286;
+}
+
+#gtdi-menu li{
+/* 	border-bottom: 1px solid #ccc; */
+	height: 25px;
+	line-height: 25px;
+	position: relative;
+}
+
+#gtdi-menu li div{
+	color: #666;
+	display: block;
+	font-size: 12px;
+/* 	font-weight: bold; */
+/* 	height: 100%; */
+	text-decoration: none;
+    cursor:pointer;
+}
+
+#gtdi-menu li a{
+	color: #666;
+	display: block;
+/* 	font-size: 14px; */
+	font-size: 12px;
+/* 	font-weight: bold; */
+/* 	height: 100%; */
+	text-decoration: none;
+}
+
+
+#gtdi-menu li div:hover{
+	background: #D1DDF0;
+}
+
+#gtdi-menu li.gtdi-active .gtdi-menuitem{
+	background: transparent url(../i/gtdi-menu-active.png) right no-repeat !important;
+	width: 130px !important;
+	color: #2E60B1;
+}
+
+#gtdi-menu span.gtdi-menuitem{
+	display: block;
+	width: 120px;
+	float: left;
+	padding: 0 10px;
+	padding-top: 0px;
+}
+#gtdi-menu span.gtdi-count{
+	background: #999;
+	-moz-border-radius: 6px;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0 6px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 3px;
+}
+
+#gtdi-filter-menu{
+	background: #fff url(../i/gtdi-header.png) top repeat-x;
+	background: #9FA8B7;
+	height: 36px;
+	padding-left: 10px;
+}
+#gtdi-filter-menu li, 
+.gtdi-row-actions{
+	display: inline;
+}
+#gtdi-filter-menu a, 
+.gtdi-row-actions a{
+/* 	background: url(../i/gtdi-filter-off_r.png) right no-repeat; */
+	color: #666;
+	display: block;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	margin-right: 5px;
+	margin-top: 6px;
+	text-decoration: none;
+
+/* New styles to simplify appearance */	
+background: #f2f2f2 url(../i/gtdi-label-grad-bg.png) top repeat-x;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+padding: 3px 8px;
+border: 1px solid #ccc;
+}
+#gtdi-filter-menu li.gtdi-active a, 
+.gtdi-row-actions li.gtdi-active a{
+	background: url(../i/gtdi-filter-on_r.png) right no-repeat;
+	color: #fff;
+/* New styles to simplify appearance */	
+background: #6694e3;
+border-color: #6694e3;
+}
+#gtdi-filter-menu a b, 
+.gtdi-row-actions a b{
+/* 	background: url(../i/gtdi-filter-off_l.png) left no-repeat; 
+	display: block;
+	float: left;
+	margin-right: 9px;
+	padding-left: 8px;
+	padding-bottom: 5px;
+*/
+}
+#gtdi-filter-menu li.gtdi-active a b,
+.gtdi-row-actions li.gtdi-active a b{
+/* 	background: url(../i/gtdi-filter-on_l.png) left no-repeat; */
+}
+#gtdi-filter-menu a span, 
+.gtdi-row-actions a span{
+	/*
+display: block;
+	float: left;
+	padding: 4px 5px;
+	line-height: 10px;
+*/
+}
+#gtdi-filter-menu a span.gtdi-filtername,
+.gtdi-row-actions a span.gtdi-actionname{
+/* 	padding-left: 3px; */
+}
+#gtdi-filter-menu a span.gtdi-count{	
+	border-left: 1px solid #999;
+	padding-right: 0;
+	height: 8px;
+}
+#gtdi-filter-menu li.gtdi-active a span.gtdi-count{
+	border-color: #03c;
+}
+#gtdi-threads{
+	background: #F0F5FF;
+	
+	background: #bfc9d9;
+	display: block;
+	float: right;
+	-moz-border-radius-bottomright: 10px;
+	width: 595px;
+}
+.gtdi-no-threads{
+	color: #666;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 150px;
+	text-align: center;
+}
+.gtdi-no-tabs-warning{
+	color: #666;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 150px;
+	text-align: center;
+}
+#gtdi-threadlists{
+	height: 367px;
+	margin-top: 0;
+	
+	padding-top: 0px;
+	overflow: auto;
+}
+#gtdi-threadlists h2{
+	color: #666;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 5px 1em 10px;
+	text-align: center;
+}
+#gtdi-threadlists .gtdi-loadingbox{
+	text-align:center;
+	padding:3px;
+	background:rgb(254,255,215);
+	width:350px;
+	margin:auto;
+	margin-top:3px;
+	-moz-border-radius:5px;
+}
+.gtdi-threadlist > li{
+	background: #fff;
+	border: 1px solid #ccc;
+	-moz-border-radius: 7px;
+	margin: 0 5px 4px 5px; 
+	padding: 7px;
+	height: 50px;
+	overflow: hidden;
+}
+.gtdi-threadlist > li:hover,
+.gtdi-threadlist > li.gtdi-active{
+	border: 8px solid #033;
+	cursor: pointer;
+	-moz-border-bottom-colors: #003333 #E9F1FF #eef4ff #f3f7ff #f7faff #fafcff #fdfeff #fafcff;
+	-moz-border-top-colors:    #003333 #E9F1FF #eef4ff #f3f7ff #f7faff #fafcff #fdfeff #fafcff;
+	-moz-border-left-colors:   #003333 #E9F1FF #eef4ff #f3f7ff #f7faff #fafcff #fdfeff #fafcff;
+	-moz-border-right-colors:  #003333 #E9F1FF #eef4ff #f3f7ff #f7faff #fafcff #fdfeff #fafcff;
+	padding: 0;
+
+}
+.gtdi-threadlist li li, .gtdi-threadlist li li .label{
+	display: block;
+	margin-right: 5px;
+	float: left;
+}
+.gtdi-threadlist ul.gtdi-threaddetails{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+/*	width: 100%;*/
+	white-space: nowrap;
+}
+li.gtdi-checked, li.gtdi-starred{
+	float: left;
+	width: 14px;
+}
+li.gtdi-threadsubject{
+	display: block;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 200px;
+}
+li.gtdi-people{
+	float: right;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: right;
+	width: 140px;
+}
+li.gtdi-attachment{
+	width: 18px;
+	float: right;
+	text-align: right;
+}
+.gtdi-threadlist li li.gtdi-date{
+	float: right;
+	text-align: right;
+	width: auto;
+	display: block;
+	white-space: nowrap;
+}
+ul.gtdi-labels{
+	clear: both;
+	margin-left: 38px;
+}
+div.gtdi-label{
+	background: #F1F5EC;
+	border-radius: 3px;
+	font-size: 9px;
+	-moz-border-radius: 3px;
+	height: 14px;
+	display: inline-block;
+    color: rgb(0, 102, 51);
+}
+div.gtdi-label span{
+	display: block;
+	float: left;
+	padding: 0 5px 0;
+	line-height: 14px;
+}
+div.gtdi-label span.gtdi-labelname{
+	/*border-right: 1px solid #000;*/
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+#gtdi-threadtoolbar{
+	background: url(../i/gtdi-toolbar.png) top repeat-x;
+	-moz-border-radius-bottomright: 10px;
+	height: 25px;
+	padding: 5px;
+	position: relative;
+}
+#gtdi-threadtoolbar .gtdi-btns{
+	text-align: right;
+}
+
+.gtdi-popup .gtdi-threadlist-group h2 span:hover
+{
+    padding: 2px;
+    border: 1px solid rgb(162, 176, 200);
+}
+
+
+/* Thread preview */
+#gtdi-thread{
+	background: #fff;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius: 10px;
+	height: 403px;
+	overflow: hidden;
+	padding: 0 10px;
+	position: relative;
+}
+.gtdi-has-header #gtdi-thread{
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0; 
+}
+.gtdi-no-header #gtdi-thread{
+	height: 443px;
+}
+h1.gtdi-thread-subject{
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 0;
+	width: 450px;	
+}
+h1.gtdi-thread-subject span{
+	padding-right: 10px;
+}
+.gtdi-thread-subject a{
+	color: #2a5db0;
+	font-size: 10px;
+	font-weight: normal;
+}
+.gtdi-thread-tools{
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+
+
+/* Labelling */
+.gtdi-labelling{
+	background: #E0ECFF;
+	-moz-border-radius: 10px;
+	clear: both;
+	float: left;
+	width: 100%;
+	min-width: 640px;
+	/*overflow: hidden;*/
+}
+
+
+	/* See Filter/Labelling section above for Action buttons */
+	
+.gtdi-labelling > ul{
+	float: left;
+	min-width: 640px;
+	width: 100%;
+}
+.gtdi-labelling > ul > li{
+	/*background: url(../i/gtdi-dbl-border-h.png) bottom repeat-x;*/
+	display: block;
+	clear: both;
+	float: left;
+	padding-top: 3px;
+	padding: 3px 0 5px 5px;
+	position: relative;
+	min-width: 640px;
+	width: 100%;
+}
+.gtdi.conversation-labels .gtdi-labelling{
+/*	overflow: hidden;*/
+}
+.gtdi.conversation-labels{
+	background: transparent;
+}
+.gtdi.conversation-labels .gtdi-labelling > ul > li{
+	width: 100%;
+	border-right: 4px solid transparent;
+}
+
+.gtdi.conversation-labels{
+	clear: both;
+	position: relative;
+}
+
+
+.gtdi-labelling h3{
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 10px;
+	margin-left: 5px;
+	line-height: 24px;
+	width: 70px;
+}
+.gtdi-labelling > ul > li:last-child{
+	background: none;
+}
+.gtdi-labelling div.gtdi-label{
+	margin-top: 5px;
+}
+.gtdi-labelling-expander{
+	text-align: center;
+    cursor: pointer;
+}
+.gtdi-labelling-expander img{
+	margin: 0 10px 0 0;
+}
+.gtdi-labelling .gtdi-dropdown{
+	width: 115px;
+}
+.gtdi-labelling .gtdi-dropdown *{
+	text-align: left !important;
+}
+/*
+.gtdi-labelling .gtdi-label-today a{
+	background-image: url(../i/gtdi-star-off.png);
+	background-position: 2px 5px; 
+	background-repeat: no-repeat;
+ 	padding-left: 20px; 
+
+}
+.gtdi-labelling .gtdi-label-today.gtdi-active a{
+	background-image: url(../i/gtdi-star-on.png);
+
+}
+*/
+
+.gtdi-labelling .gtdi-row-actions .gtdi-btn-grp{
+	padding-right: 10px;
+	margin-top: 3px;
+}
+
+.gtdi-labelling #gtdi-arcfin .gtdi-active{
+	cursor: auto;
+}
+
+
+/* Big blummin expanderizer */
+
+.gtdi-labelling-expander{
+	background: #C4D0E6;
+	color: #fff;
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	width: 20px;
+	-moz-border-radius: 15px;
+	margin-bottom: -7px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+
+
+.gtdi-labelling-expander-off.gtdi-hover{
+ 	background: #669;
+}
+
+/* Message in Thread Preview */
+#gtdi-messages{
+	float: left;
+	margin-top: 20px;
+	padding-top: 20px;
+	display: table-cell;
+	height: 230px;
+	width: 720px;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+.gtdi-no-header #gtdi-messages{
+	height: 320px;
+}
+.gtdi-message{
+	background: #fff;
+	border: 1px solid #ccc !important;
+	clear: both;
+	float: left;
+	margin-top: -20px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	width: 99%;
+	overflow: hidden;
+}
+.gtdi-message.gtdi-final{
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+}
+.gtdi-messagehead{
+/* 	padding: 5px 15px 0; */
+	margin-bottom: 12px;
+	position: relative;
+/* 	width: 100%; */
+/* 	max-width: 590px; */
+}
+
+
+/* ### To be removed when new TABLE is in place */
+.gtdi .gtdi-messagehead ul{
+	display: table;
+	float: none;
+	font-size: 12px;
+	clear: both;
+	margin: 5px 15px;
+}
+.gtdi .gtdi-messagehead li{
+	display: table-cell;
+	overflow: hidden;
+	text-align: left;
+	width: 100%;
+}
+.gtdi-messagehead li span{
+	display: block;
+	height: 16px;
+	overflow: hidden;
+	width: 100%;
+}
+.gtdi-messagehead li.gtdi-messagefrom{
+	width: auto;
+}
+.gtdi-messagehead li.gtdi-messagefrom span{
+	font-weight: bold;
+	margin-right: 10px;
+	white-space: nowrap;
+	display:inline;
+}
+.gtdi-messagehead li.gtdi-messagesnippet{
+	position: relative;
+}
+.gtdi-messagehead li.gtdi-messagesnippet span{
+	color: #ccc;
+	visibility: hidden;
+	display: block;
+	font-size: 12px;
+}
+.gtdi-messagehead li.gtdi-messagesnippet span *{
+	color: #ccc;
+	display: inline;
+	margin: 0;
+	width: auto;
+	background: 0;
+	white-space: nowrap;
+}
+.gtdi-messagehead li.gtdi-messagesnippet span img,
+.gtdi-messagehead li.gtdi-messagesnippet span table{
+	display: none;
+}
+.gtdi-messagehead li.gtdi-messagedatetime{
+	padding-left: 20px;
+	text-align: right;
+	white-space: nowrap;
+}
+
+/* ###End of remove */
+
+/* New TABLE for header */
+
+.gtdi .gtdi-messagehead table{
+	float: none;
+	font-size: 12px;
+	clear: both;
+	max-width: 100%;
+	height: .9em;
+	overflow: hidden;
+}
+.gtdi .gtdi-messagehead td{
+	display: table-cell;
+	overflow: hidden;
+	max-height: .9em;
+}
+.gtdi-messagehead td span{
+	display: block;
+	height: 14px;
+	overflow: hidden;
+}
+.gtdi-messagehead td.gtdi-messagefrom span{
+	font-weight: bold;
+	margin-right: 10px;
+	white-space: nowrap;
+}
+.gtdi-messagehead td.gtdi-messagesnippet span{
+	color: #ccc;
+	visibility: hidden;
+}
+.gtdi-messagehead td.gtdi-messagedatetime{
+	padding-left: 20px;
+	text-align: right;
+	white-space: nowrap;
+}
+.gtdi-messagehead td.gtdi-messageactions{
+	padding-left: 8px;
+}
+.gtdi-messagehead td.gtdi-messagesnippet span *{
+	color: #ccc;
+	display: inline;
+	margin: 0;
+	width: auto;
+	background: 0;
+	white-space: nowrap;
+}
+.gtdi-messagehead td.gtdi-messagesnippet span img,
+.gtdi-messagehead td.gtdi-messagesnippet span table{
+	display: none;
+}
+
+
+/* End of Table */
+
+.gtdi-messagebody{
+	font-size: 12px;
+	margin: -10px 0 -15px;
+	padding: 0 15px 35px;
+}
+.gtdi-messagecontent{
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+.gtdi-messagebody p, 
+.gtdi-messagebody ul, 
+.gtdi-messagebody ol{
+	margin-bottom: 1em;
+}
+.gtdi-message.gtdi-closed{
+	padding-bottom: 0;
+}
+.gtdi-closed .gtdi-messagebody{
+}
+.gtdi-message.gtdi-closed li.gtdi-messagesnippet span{
+	visibility: visible;
+}
+.gtdi-message.gtdi-closed .gtdi-messagebody .gtdi-messagecontent{
+	display: none;
+}
+
+/* Buttons */
+/* Single */
+.gtdi-btn{
+	cursor: pointer;
+	display: inline-block;
+	height: 18px;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	font-size: 11px;
+}
+.gtdi-btn-t, 
+.gtdi-btn-b{
+	height: 1px;
+	background: #bbb;
+	margin: 0 1px;
+}
+.gtdi-btn-t2{
+	height: 8px;
+	background: #f9f9f9;
+}
+.gtdi-btn-m{
+	height: 2px;
+	background: #eee;
+}
+.gtdi-btn-b2{
+	height: 8px;
+	background: #e3e3e3;
+}
+.gtdi-btn b{
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	display: block;
+}
+.gtdi-btn .gtdi-btn-label{
+	display: block;
+	height: 18px;
+	line-height: 28px;
+	margin: 0 10px;
+	position: relative;
+	text-align: center;
+	top: -24px;	
+}
+.gtdi-btn-grp.gtdi-icons .gtdi-btn .gtdi-btn-label{
+	margin: 0 5px;
+}
+/* Group */
+.gtdi-btn-grp{
+	margin-right: 10px;
+	float: left;
+}
+.gtdi-btn-grp .gtdi-btn{
+	margin-right: 0;
+}
+.gtdi-btn-grp .gtdi-btn .gtdi-btn-t,
+.gtdi-btn-grp .gtdi-btn .gtdi-btn-b{
+	margin: 0;
+}
+.gtdi-btn-grp .gtdi-btn:first-child .gtdi-btn-t,
+.gtdi-btn-grp .gtdi-btn:first-child .gtdi-btn-b{
+	margin-left: 1px;
+}
+.gtdi-btn-grp .gtdi-btn:last-child .gtdi-btn-t,
+.gtdi-btn-grp .gtdi-btn:last-child .gtdi-btn-b{
+	margin-right: 1px;
+}
+.gtdi-btn-grp .gtdi-btn b{
+	border-right-width: 0;
+}
+.gtdi-btn-grp .gtdi-btn:last-child b{
+	border-right-width: 1px;
+}
+/* Dropdown */
+.gtdi-btn.gtdi-dropdown .gtdi-btn-label{
+	background: url(../i/gtdi-dropdown-arrow.png) right 10px no-repeat;
+	padding-right: 20px;
+}
+/* Active */
+.gtdi-btn.gtdi-active .gtdi-btn-t2{
+	background: #777;
+}
+.gtdi-btn.gtdi-active .gtdi-btn-m{
+	background: #888;
+}
+.gtdi-btn.gtdi-active .gtdi-btn-b2{
+	background: #999;
+}
+.gtdi-btn.gtdi-active b, 
+.gtdi-btn:hover b{
+	border-left: 1px solid #888;
+	border-right: 1px solid #888;
+}
+.gtdi-btn.gtdi-active .gtdi-btn-t, 
+.gtdi-btn:hover .gtdi-btn-t,
+.gtdi-btn.gtdi-active .gtdi-btn-b,
+.gtdi-btn:hover .gtdi-btn-b{
+	background: #888;
+}
+.gtdi-btn.gtdi-dropdown.gtdi-active .gtdi-btn-label{
+	background: url(../i/gtdi-dropdown-arrow-active.png) right 10px no-repeat;
+}
+.gtdi-btn.gtdi-dropdown.gtdi-active .gtdi-btn-label{
+	color: #fff;
+}
+
+.gtdi-row .gtdi-btn{
+	height: 18px;
+	font-size: 11px;
+	margin-bottom: 4px;
+}
+
+
+
+
+/* Archive and Finish buttons */
+#gtdi-arcfin{
+	margin-right: 10px;
+	margin-top: 6px;
+}
+#gtdi-arcfin .gtdi-btn-grp, #gtdi-arcfin .gtdi-btn-grp .gtdi-btn{
+	margin: 0;
+	padding-right: 0;
+}
+#gtdi-arcfin .gtdi-btn+.gtdi-btn b{
+/* 	border-left: 0; */
+}
+#gtdi-arcfin .gtdi-btn+.gtdi-btn.gtdi-active b{
+	border-left: 1px dotted #666;
+	margin-left: -1px;
+}
+.gtdi-finish-next img, .gtdi-archive-next img{
+	margin-top: 9px;
+}
+#gtdi-arcfin .gtdi-btn .gtdi-btn-label,
+.gtdi-send,
+.gtdi-send_eom{
+	line-height: 30px !important;
+}
+
+.gtdi-actionandmove .gtdi-btn-grp .gtdi-btn:first-child .gtdi-btn-label{
+	width: 55px;
+	text-align: left;
+}
+
+
+/* Next and previous buttons */
+.gtdi-btn.gtdi-prev img,
+.gtdi-btn.gtdi-next img{
+	margin-top: 10px;
+}
+
+/* Advanced Send box buttons */
+
+.gtdi-send-popup .gtdi-btn-grp
+{
+    display: block;
+    float: none;
+}
+.gtdi-actionandmove .gtdi-btn-grp .gtdi-btn:first-child.gtdi-send_eom .gtdi-btn-label{
+}
+.gtdi-send-popup-status select
+{
+    width: 90px;
+}
+
+
+
+
+/* Dropdowns*/
+.gtdi-droppeddown, 
+.gtdi-box-row-popout{
+	background: #fff;
+	border: 1px solid #666;
+	max-height: 400px;
+	overflow: auto;
+	position: absolute;
+	padding: 0 0 14px 0;
+	top: 22px;
+	left: 0;
+	z-index: 5002;
+    min-width: 180px;
+}
+
+.gtdi-droppeddown .gtdi-active
+{
+    font-weight: bold;
+}
+
+.gtdi-box-row-popout, .gtdi-droppeddown{
+	font-size: 12px;
+	padding: 10px !important;
+	border-radius: 6px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+.gtdi-box-popout-label-title{
+	background: #fff;
+	color: #666;
+	text-transform: uppercase;
+	margin: -10px -10px 5px -10px;
+	padding: 3px 10px;
+}
+.gtdi-box-popout-label-recent,
+.gtdi-droppeddown-recent{
+	border-bottom: 1px solid #ccc;
+	margin: 0 0px 10px;
+	padding: 0 0 5px 0;
+}
+.gtdi-box-popout-label-recent-title,
+.gtdi-droppeddown-recent-title{
+	background: #6694e3;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 3px 10px !important;
+	margin-bottom: 5px !important;
+	display: none;
+}
+.gtdi-box-popout-label-recent-item,
+.gtdi-droppeddown-recent-item{
+	padding: 0 10px;
+	margin-left: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gtdi-box-popout-label-recent-item:hover,
+.gtdi-droppeddown-recent-item:hover,
+.gtdi-labeldom-label:hover{
+	background: #ffc;
+}
+
+#gtdi-threadtoolbar .gtdi-dropdown .gtdi-droppeddown, 
+#gtdi-threadtoolbar .gtdi-box-row-popout{
+	bottom: 21px;
+	top: auto;
+}
+.gtdi-dropdown .gtdi-droppeddown > div{
+	padding: 0 5px;
+}
+
+.gtdi-dropdown .gtdi-droppeddown .gtdi-droppeddown-recent-title{
+/* 	background: #e0ecff; */
+	margin: 0 0;
+	padding: 4px 7px;
+	font-weight: bold;
+}
+.gtdi-dropdown .gtdi-droppeddown div.gtdi-droppeddown-recent-item,
+.gtdi-box-popout-label-recent-item{
+	padding: 2px 4px !important;
+    padding-right: 20px !important;
+	text-decoration: underline;
+	color: #2A5DB0 !important;
+}
+.gtdi-dropdown .gtdi-droppeddown div.gtdi-droppeddown-recent{
+/* 	border-bottom: 1px solid #e0ecff; */
+	padding: 4px;
+	margin-bottom: 4px;
+}
+.gtdi-droppeddown-recent-item{
+	padding: 0 4px;
+}
+.gtdi-dropdown-search{
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin: 0 0 10px;
+	padding: 5px 5px;
+	width: 130px;
+}
+.gtdi-dropdown-search input{
+	width: 122px;
+}
+.gtdi-dropdown-items{
+	max-height: 350px;
+	padding: 3px 5px;
+    cursor: auto;
+/*	overflow: auto;*/
+}
+.gtdi-dropdown-items li{
+	margin-bottom: .5em;
+	text-align: left;
+    cursor: auto;
+}
+.gtdi-dropdown-items li input{
+	margin-right: 3px;
+}
+.gtdi-dropdown-items a{
+	color: #000;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/* Groupby special buttons */
+.gtdi-threadlist-groupby img{
+	margin-top: 3px;
+}
+
+
+
+/* Label Indentation */
+
+.gtdi-labeldom .gtdi-labeldom-label
+{
+	color: #2A5DB0;
+	font-size: 12px;
+	padding: 2px 4px;
+    
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    cursor:pointer;
+    
+    position: relative;
+}
+
+.gtdi-labeldom .gtdi-labeldom-label .gtdi-labeldom-expander
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 4px;
+}
+.gtdi-labeldom .gtdi-labeldom-placeholder{
+    color: #000 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+
+
+
+/* Create new label */
+
+.gtdi-droppeddown-create{
+	background: #eee;
+	border: 1px solid #ddd;
+	cursor: hand;
+	-moz-border-radius: 20px;
+	margin: 4px;
+	padding: 4px !important;
+}
+.gtdi-droppeddown-create img{
+	margin-bottom: -4px;
+	margin-right: 4px;
+}
+
+
+
+
+.gtdi-close{
+	background: url(../i/gtdi-close.png) top right;
+	display: block;
+	height: 31px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-indent: -9999px;
+	top: 0;
+	width: 31px;
+	z-index:1;
+}
+
+
+.gtdi-popup
+{
+z-index: 5000;
+}
+
+.gtdi-popup .gtdi-resize
+{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 1px;
+    right: 20px;
+    cursor: nwse-resize;
+}
+
+.gtdi-navitem
+{
+color: #0000CC;
+text-decoration: underline;
+font-size: 80%;
+font-family: arial,sans-serif;
+padding-left:22px;
+margin-left: 4px;
+cursor:pointer;
+}
+
+.gtdi-navitem-dashboard
+{
+margin-top: 10px;
+}
+
+
+/***********************************************************************/
+/* Labels Sidebar UI Enhancement - Paul Thompson (captbunzo@gmail.com) */
+/***********************************************************************/
+
+.pvSW6e, .pO
+{
+  padding: 0px;
+}
+
+.pvSW6e .showhider-content, .pO .showhider-content
+{
+  margin-bottom: 0px;
+}
+
+.pvSW6e .showhider-title, .pO .showhider-title
+{
+  /*background:    #d6efda;
+  border-bottom: 1px solid #b5efbd;
+  position:      relative;
+  margin-bottom: 0px;
+  padding:       0px 0px;
+  padding-top:   1px;*/
+}
+
+.pvSW6e .showhider-title img, .pO .showhider-title img
+{
+  display: none;
+}
+
+.pvSW6e .showhider .showhider-title, .pO .showhider .showhider-title
+{
+  /*background-image:    url(../group-closed.gif);
+  background-position: center right;
+  background-repeat:   no-repeat;*/
+}
+
+.pvSW6e .showhider-open .showhider-title, .pO .showhider-open .showhider-title
+{
+ /* background-image:    url(../group-open.gif) !important;
+  background-position: center right;
+  background-repeat:   no-repeat;*/
+}
+
+.pvSW6e .showhider-content, .pO .showhider-content
+{
+  margin-top:    1px;
+  margin-bottom: 0px;
+}
+
+.pvSW6e .showhider-content .yyT6sf, .pO .showhider-content .yyT6sf
+{
+  margin-left: 3px;
+}
+/*
+.pO tr td > div:first-child
+{
+	padding-left: 10px;
+}
+*/
+
+/*.pO tr td div <-- previous container for gtdi-labeldom-expander*/
+
+
+/* CORRECT THE THEMES */
+/* Date TD in ThreadList */
+.xweT7d .pmKLre, .zt .xW
+{
+	text-align:left;
+}
+
+
+
+/* TODO: Put these rules in the correct place in the stylesheet */
+
+div.compose-tabs{
+	padding-left: 57px;
+}
+div.compose-tabs div{
+	float: left;
+	display: inline-block;
+	font-size: 12px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border: 1px solid #6694e3;
+	border-bottom: 0;
+	margin-bottom: -3px;
+	padding: 3px 8px;
+}
+div.compose-tabs div.gtdi-active{
+	background: #6694e3;
+	color: #fff;
+}
+
+
+
+
+
+/* Experimental stuff for sorting out the main label navigation */
+.showhider-title{
+	background: #e0ecff;
+	border-top: 1px solid #fff;
+	padding: 3px 2px;
+}
+
+.gtdi-clearfix{
+	width: 100%;
+	clear: both;
+	display: block;
+}
+
+
+
+.gtdi-compose-labels
+{
+    margin-left: 50px;
+}
+
+
+.gtdi-threadlist-thread{
+	background: #fff;
+	border-top: 1px solid #bdbdbd;
+	font-size: 12px !important;
+	border-left: 6px solid transparent;
+	border-collapse: seperate;
+}
+.gtdi-threadlist-thread tr{
+	background: #efefef;
+    cursor: pointer;
+}
+.gtdi-threadlist-thread td{
+	padding: 2px 3px;
+}
+.gtdi-threadlist-thread .gtdi-subjectline{
+	color: #333;
+}
+table.gtdi-unread tr{
+	background: #fff;
+}
+.gtdi-threadlist-thread .gtdi-selectthread{
+    margin-top: 2px;
+	margin-left: 3px;
+}
+table.gtdi-unread .gtdi-subjectline{
+	font-weight: bold;
+}
+table.gtdi-unread .gtdi-people
+{
+    font-weight:bold;
+}
+table .gtdi-people
+{
+    font-size: 0.85em;
+}
+table .gtdi-people span:hover{
+    border: 1px solid #ccc;
+}
+.gtdi-threadlist-thread .gtdi-labels .gtdi-label{
+	font-size: 10px;
+	margin-right: 4px;
+    margin-bottom: 2px;
+    padding: 2px 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+.gtdi-threadlist-thread .gtdi-labels .gtdi-label:hover{
+    border: 1px solid #bbb;
+}
+.gtdi-threadlist-thread .gtdi-labels .gtdi-label span
+{
+    padding: 0px;
+}
+.gtdi-threadlist-thread .gtdi-threadlist-thread-colmiddle
+{
+    overflow:hidden;
+    height:1em;
+}
+.gtdi-threadlist-thread .gtdi-threadlist-thread-subjectcontainer
+{
+    overflow:hidden;
+    height:1.1em;
+    width:100%;
+}
+.gtdi-threadlist-thread .gtdi-threadlist-thread-collast
+{
+    text-align:right;
+    width: 100px;
+}
+.gtdi-threadlist-thread .gtdi-open-in-gmail{
+	margin-left: 4px;
+}
+.gtdi-threadlist-thread:hover{
+	border-left: 6px solid #6694e3;
+}
+
+
+
+/* Popup Notice */
+
+.gtdi-popup-notice-content
+{
+	background: #fff;
+	float: left;
+	padding: 40px;
+	position: relative;
+	-moz-border-radius: 10px;
+}
+.gtdi-popup-notice-content p
+{
+	margin-bottom: 1em;
+	line-height: 1.4em;
+}
+
+.gtdi-popup-notice-content div
+{
+    margin-bottom: 1em;
+}
+
+
+.gtdi-popup-notice h2
+{
+    font-weight:bold;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin-bottom: 1em;
+}
+.gtdi-popup-notice h3
+{
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin-bottom: 1em;
+}
+
+
+/* Setup Splash */
+.gtdi-popup-notice-gtdsetup #gtdi-gtdsetup-hide
+{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+.gtdi-popup-notice-gtdsetup #gtdi-gtdsetup-hidemsg{
+    color: #555;
+    margin-top: 5px;
+}
+
+
+
+/* Welcome splash */
+.gtdi-popup-notice-content-gtdwelcome #gtdi-gtdwelcome-body{
+	float: left;
+	width: 60%;
+}
+.gtdi-popup-notice-content-gtdwelcome #gtdi-gtdwelcome-sidepanel{
+	float: right;
+	width: 35%;
+}
+.gtdi-popup-notice-content-gtdwelcome #gtdi-gtdwelcome-sidepanel .gtdi-news{
+	border: 1px solid #9cb445;
+	margin-top: 2em;
+	-moz-border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* Labels Help */
+
+#gtdi-gtd-labelsinfo-root{
+	padding: 20px;
+	line-height: 140%;
+}
+#gtdi-gtd-labelsinfo-root h2{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+#gtdi-gtd-labelsinfo-root p{
+	margin-bottom: 1em;
+	font-size: 14px;
+}
+.gtdi-gtd-labelsinfo-categories-name{
+	font-weight: bold;
+}
+.gtdi-gtd-labelsinfo-categories-desc{
+	font-size: 12px;
+	font-style: italic;
+}
+div#gtdi-gtd-labelsinfo-setup{
+	color: #6694e3;
+	cursor: pointer;
+	font-weight: bold;
+	margin-bottom: 2em;
+	
+}
+
+#gtdi-tlcmds-popup
+{
+    position: absolute;
+    border: solid 1px #6694e3;
+    background-color: white;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    padding:5px 0;
+    font-size: 11px;
+    z-index: 5000;
+}
+
+#gtdi-tlcmds-popup .gtdi-tlcmds-popup-lineitem
+{
+    cursor: pointer;
+    padding: 3px 8px;
+}
+
+#gtdi-tlcmds-popup .gtdi-tlcmds-popup-lineitem:hover
+{
+    background-color: #ffc;
+}
+
+.gtdi-open-in-gmail
+{
+    cursor: pointer;
+}
+
+
+
+
+.gtdi-box-row-popup, .gtdi-box-row-extend
+{
+    position: absolute;
+    right: 0px;
+    margin-left: 4px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.gtdi-box-row-extend:hover
+{
+    border: 1px solid #6694E3;
+}
+
+.gtdi-box-row-popup
+{
+    right: 11px !important;
+}
+
+.gtdi-box-popout-label-showall
+{
+    position: absolute;
+    right: 17px;
+    margin-left: 4px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.gtdi-box-popout-label-showall:hover
+{
+    border: 1px solid #6694E3;
+}
+
+
+#gtdi-gtd-cv-warning-hide
+{
+    color:#2A5DB0;
+    text-decoration:underline;
+    margin-left: 5px;
+    cursor:pointer;
+	
+}
+
+/* Stats indicator */
+.gtdi-stats-notifier{
+	border-bottom: 2px solid #E0ECFF;
+	clear:both;
+	float:left;
+	font-size: 11px;
+	font-weight: bold;
+	margin: -6px -7px 0 !important;
+	width:160px;
+}
+.gtdi-stats-notifier li{
+	display: block;
+	float: left;
+	margin: 0;
+	width: 52px;
+}
+.gtdi-stats-notifier.gtdi-twocol li{
+	display: block;
+	float: left;
+	margin: 0;
+	width: 79px;
+}
+.gtdi-stats-notifier li:first-child{
+	border-right: 1px solid #E0ECFF;
+}
+.gtdi-stats-notifier li:last-child{
+	border-left: 1px solid #E0ECFF;
+}
+.gtdi-stats-notifier.gtdi-twocol li:last-child{
+	border-left: 0;
+}
+
+.gtdi-stats-notifier li span{
+	display: block;
+	padding: 4px 4px 4px 26px;
+}
+.gtdi-stats-notifier .gtdi-categorised span{ 
+	background: url(../i/gtdi-stats-icons.png) 6px 6px no-repeat;
+}
+.gtdi-stats-notifier .gtdi-done span{ 
+	background: url(../i/gtdi-stats-icons.png) 6px -27px no-repeat;
+}
+
+.gtdi-stats-notifier .gtdi-toprocess span{ 
+	background: url(../i/gtdi-stats-icons.png) 6px -54px no-repeat;
+	padding-left: 16px;
+}
+
+
+#gtdi-gmaillabelsbox-recent-title{
+    cursor: pointer;
+    padding-left: 21px;
+}
+#gtdi-gmaillabelsbox-recent-title IMG{
+    position: absolute; margin-left: -16px; margin-top: 4px;
+}
+.gtdi-gmaillabelsbox-recent-hidden{
+}
+
+.gtdi-box-row-gtdtypes
+{
+    background: url(../i/gtdi-bulb-green.png) 136px 3px no-repeat;
+}
+.gtdi-box-row-gtdtypes:hover
+{
+    background-color: #ffc !important;
+    cursor: pointer;
+}
+.gtdi-box-row-gtdtypes-statuses:hover
+{
+    background-color: #ffc !important;
+    cursor: pointer;
+}
+.gtdi-box-row-gtdtypes-hasitems
+{
+    font-weight:bold;
+    background: url(../i/gtdi-bulb-red.png) 136px 3px no-repeat;
+}
+
+#gtdi-box-popup-types-statuses-overview
+{
+    margin-left:12px;
+    margin-top:7px;
+    cursor: pointer;
+}
+#gtdi-box-popup-types-statuses-overview:hover
+{
+    text-decoration: underline;
+}
+.gtdi-box-popout-nolabels-info
+{
+    margin-bottom: 15px;
+}
+
+#gtdi-boxpref-force-container
+{
+    margin-top: 6px;
+    opacity: 0.6;
+}
+#gtdi-box-row-type-statuses-popout
+{
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+#gtdi-box-row-type-statuses-popout:hover
+{
+    border: 1px solid #6694e3;
+}
+.gtdi-box-row-gtdtypes-statuses
+{
+    margin-bottom: 5px;
+}
+
+
+.gtdi-actionandmove
+{
+    position:relative;
+    display:inline-block;
+}
+.gtdi-actionandmove-popup
+{
+    position: absolute;
+    top:20px;
+    left:0px;
+    z-index:5000;
+    
+    /* Styles for padding around (less jumpy) */
+    left: -10px;
+    padding-left: 10px;
+    width: 131px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+}
+.gtdi-actionandmove-popup .gtdi-btn-grp
+{
+    float:none !important;
+}
+.gtdi-actionandmove .gtdi-btn-grp
+{
+}
+.gtdi-actionandmove .gtdi-btn-grp:hover
+{
+}
+.gtdi-actionandmove-container .gtdi-btn-label
+{
+    font-weight:bold;
+    color:green;
+}
+.gtdi-notify
+{
+    padding: 7px;
+    float: right;
+}
+
+
+
+/* Advanced Send button popup */
+
+.gtdi-send-popup{
+	background: #fff;
+	border: 1px solid #6694e3;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	font-size: 12px;
+	padding: 15px;
+    padding-top: 2px;
+    height: 76px;
+}
+.gtdi-send-popup-status,
+.gtdi-send-popup-modifiers{
+	margin-bottom: 5px;
+}
+.gtdi-send-popup-status select{
+	margin-left: 5px;
+}
+.gtdi-send-popup-modifiers input{
+	margin: 0 5px 0 0;
+}
+.gtdi-send-popup .gtdi-actionandmove-container .gtdi-send_eom .gtdi-btn-label
+{
+    color:black;
+    font-weight: normal;
+}
+.gtdi-send-popup .gtdi-actionandmove
+{
+    margin-top: 6px;
+}
+.gtdi-send-popup .gtdi-dropdown
+{
+    width: 131px;
+}
+.gtdi-send-popup .gtdi-droppeddown
+{
+    min-width: 110px;
+}
+.gtdi-send-popup .gtdi-droppeddown input
+{
+    margin-right: 5px;
+}
+.gtdi-send-popup .gtdi-send-popup-status-item
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.gtdi-send-popup .gtdi-send-popup-status-item:hover
+{
+    background-color: #eee;
+}
+
+
+.gtdi-searchbuilder-labelsmenu
+{
+    position: absolute;
+}
+
+.gtdi-searchbuilder-labelsmenu-row-popup 
+{
+    position: absolute;
+    right: 0px;
+    margin-left: 4px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.gtdi-searchbuilder-labelsmenu-row-extend:hover
+{
+    border: 1px solid #6694E3;
+}

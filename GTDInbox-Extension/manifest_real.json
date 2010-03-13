@@ -1,0 +1,46 @@
+{
+    "name": "GTDInbox for Gmail",
+    "version": "3.0.0",
+    
+    "description": "Transform emails into tasks to get things done",
+    
+    "permissions": [
+        "http://www.google.co.uk/",
+        "http://www.gtdinbox.com/"
+    ],
+    
+    "background_page": "content/js/chrome_backgroundPage/background.html",
+    
+    "content_scripts": [{
+        "matches": [
+            "http://mail.google.com/mail/*",
+            "https://mail.google.com/mail/*"
+        ],
+        "js": [
+            "content/js/util/oohelper.js",
+            "content/js/util/debug.mozilla.js",
+            "content/js/util/debug.chrome.js",
+            "content/js/util/eventDispatcher.js",
+            "content/js/util/callback.js",
+            "content/js/util/util.js",
+            "content/js/util/giMultiToOne.js",
+            "content/js/util/giEventsContainer.js",
+            "content/js/util/giFileIO.js",
+            "content/js/util/giJson.js",
+            "content/js/util/giSafeJS.chrome.js",
+            "content/js/util/giUrl.chrome.js",
+            "content/js/util/giXMLHttpRequest.chrome.js",
+            "content/js/util/giRss.js",
+            "content/js/util/giResizer.js",
+            "content/js/util/giI18N.js",
+            "content/js/core/giPrefData.chrome.js",
+            "content/js/core/giPrefManager.js",
+            "content/js/main_test.chrome.js"
+        ],
+        "all_frames": true
+    }]
+}
+
+
+
+

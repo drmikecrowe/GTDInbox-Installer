@@ -1,0 +1,82 @@
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.6.0
+
+Modified to be specific to GTDInbox by Pete Lambert on 18th March 2009
+*/
+/*.gtdi div,*/
+.gtdi{
+font-size:12px;
+}
+.gtdi dl,
+.gtdi dt,
+.gtdi dd,
+.gtdi ul,
+.gtdi ol,
+.gtdi li,
+.gtdi h1,
+.gtdi h2,
+.gtdi h3,
+.gtdi h4,
+.gtdi h5,
+.gtdi h6,
+.gtdi pre,
+.gtdi code,
+.gtdi form,
+.gtdi fieldset,
+.gtdi legend,
+.gtdi input,
+.gtdi textarea,
+.gtdi p,
+.gtdi blockquote,
+.gtdi th,
+.gtdi td{margin:0;padding:0;}
+.gtdi table{border-collapse:collapse;border-spacing:0;}
+.gtdi fieldset,
+.gtdi img{border:0;}
+.gtdi address,
+.gtdi caption,
+.gtdi cite,
+.gtdi code,
+.gtdi dfn,
+.gtdi em,
+.gtdi strong,
+.gtdi th,
+.gtdi var{font-style:normal;font-weight:normal;}
+.gtdi li{list-style:none;}
+.gtdi caption,
+.gtdi th{text-align:left;}
+.gtdi h1,
+.gtdi h2,
+.gtdi h3,
+.gtdi h4,
+.gtdi h5,
+.gtdi h6{font-size:100%;font-weight:normal;}
+.gtdi q:before,
+.gtdi q:after{content:'';}
+.gtdi abbr,
+.gtdi acronym{border:0;font-variant:normal;}
+.gtdi sup{vertical-align:text-top;}
+.gtdi sub{vertical-align:text-bottom;}
+.gtdi input,
+.gtdi textarea,
+.gtdi select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+.gtdi input,
+.gtdi textarea,
+.gtdi select{*font-size:100%;}
+.gtdi legend{color:#000;}
+.gtdi del,
+.gtdi ins{text-decoration:none;}
+/*.gtdi{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}*/
+.gtdi select,
+.gtdi input,
+.gtdi button,
+.gtdi textarea{font:99% arial,helvetica,clean,sans-serif;}
+.gtdi table{font-size:inherit;font:100%;}
+.gtdi pre,
+.gtdi code,
+.gtdi kbd,
+.gtdi samp,
+.gtdi tt{font-family:monospace;*font-size:108%;line-height:100%;}

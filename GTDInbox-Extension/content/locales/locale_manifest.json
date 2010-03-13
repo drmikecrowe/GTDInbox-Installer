@@ -1,0 +1,12 @@
+{
+    "default_locale": "en_US",
+    "files": [
+        "boxErrorReporter.htm",
+        "gtdLabels.htm",
+        "gtdSetup.htm",
+        "gtdWelcome.htm",
+        "gtdWelcomePlus.htm",
+        "register.htm",
+        "preferences.htm"
+    ]
+}

@@ -1,0 +1,123 @@
+<h1>GTDInbox Preferences</h2>
+
+<div id="preferences-pane">
+    
+    
+    <h2>Features</h2> <!-- Features Section -->
+    
+    <h3>Navigation</h3>
+    
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.navigation.types.enabled" /> <label>"Reviews" Sidebar Box</label>
+    </div>
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.navigation.gmail_labels_box.enabled" /> <label>Toggle Visibility of Gmail's "Recent Labels"</label>
+    </div>
+    
+    <h3>Compose Mail</h3>
+    
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.compose.compose_personal.enabled" /> <label>"Compose Personal" Sidebar Shortcut</label>
+    </div>
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.compose.compose_personal_tabs.enabled" /> <label>Compose Personal Tabs</label>
+    </div>
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.compose.compose_labels.enabled" /> <label>Pre-Label Box</label>
+    </div>
+    
+    <h3>Inbox, All Mail Search Results, etc.</h3>
+    
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.thread_list.preview_button.enabled" /> <label>Preview Icon</label>
+    </div>
+    
+    <h3>Conversations</h3>
+    
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.conversation.labelling_box.enabled" /> <label>Labeling Box</label>
+    </div>
+    
+    <h3>Search</h3>
+    
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.search.search_button.enabled" /> <label>"Search in Popup" button</label>
+    </div>
+    
+    <h3>Right Click Menu (Context Click on Macs)</h3>
+    
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.right_click.thread_preview.enabled" /> <label>Preview Conversation in Inbox, All Mail, etc.</label>
+    </div>
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.right_click.label_popup.enabled" /> <label>Label Popup</label>
+    </div>
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.components.right_click.contact_popup.enabled" /> <label>Contact Popup</label>
+    </div>
+    
+    <h3>Error Monitor</h3>
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="do_not_show_error_monitor" /> <label>Hide the Error Monitor (and submit errors automatically)</label>
+    </div>
+    
+    
+    <h2>Label Categories</h2> <!-- Label Categories Section -->
+    
+    <button id="gtdi-pref-labelcategories-add">Add Category</button>
+    
+    <div id="gtdi-pref-labelcategoriescontainer">
+        <h4>Current Categories</h4>
+        
+        <select id="gtdi-pref-labelcategoriescontainer-categories" size="6">
+        </select>
+        <div id="gtdi-pref-labelcategoriescontainer-prefixcontainer" class="gtdi-pref-textboxcontainer">
+            <label>Category Label Prefix:</label> <input type="text" id="gtdi-pref-labelcategoriescontainer-prefix" />
+        </div>
+        <div class='gtdi-pref-smallnote'>
+            Changing prefixes may require you to manually rename labels in Gmail.
+        </div>
+        <button id="gtdi-pref-labelcategories-remove">Remove Category</button>
+    </div>
+    
+    <h2>Status Labels (Advanced)</h2> <!-- Status Labels Section -->
+            
+    <div class='gtdi-pref-feature'>
+        <input type="checkbox" gtdi-preference="gtd.allow_multiple_statuses" /> <label>Allow Multiple Statuses</label>
+    </div>
+        
+    <div id="gtdi-pref-statuslabelscontainer">
+        
+        <h4>Inbuilt Status Labels</h4>
+        
+        <select id="gtdi-pref-statuslabelscontainer-statuslabels" size="6">
+        </select>
+        <div id="gtdi-pref-statuslabelscontainer-labelcontainer" class="gtdi-pref-textboxcontainer">
+            <label>Status Label:</label> <span id="gtdi-pref-statuslabelscontainer-labelprefix"></span><input type="text" id="gtdi-pref-statuslabelscontainer-label" />
+        </div>
+        <div class='gtdi-pref-smallnote'>
+            Changing status label preferences may require you to manually rename labels in Gmail.
+        </div>
+    </div>
+    
+    
+    <h2>Your GTDInbox Plus Account</h2> <!-- GTDInbox Account Section -->
+    
+    <div id="gtdi-pref-accountcontainer">
+        
+        <div id="gtdi-pref-accountcontainer-statuscontainer">
+            Account Status: <span id="gtdi-pref-accountcontainer-status"></span>
+        </div>
+        
+        <div id="gtdi-pref-accountcontainer-passwordcontainer" class="gtdi-pref-textboxcontainer">
+            <label>Set your GTDInbox Account password:</label> <input type="password" id="gtdi-pref-accountcontainer-password1" />
+        </div>
+        <div id="gtdi-pref-accountcontainer-passwordcontainer" class="gtdi-pref-textboxcontainer">
+            <label>Confirm your password:</label> <input type="password" id="gtdi-pref-accountcontainer-password2" />
+        </div>
+        <div><a href="" id='gtdi-pref-accountcontainer-forgotpassword' target="_blank" >I have forgotten my password</a></div>
+        <div id="gtdi-pref-accountcontainer-getaccountnotice" class="gtdi-pref-smallprint"><a href="" target="_blank" id="gtdi-pref-accountcontainer-getaccount">Don't have GTDInbox Plus? Buy GTDInbox Plus</a></div>
+        <button id="gtdi-pref-accountcontainer-passwordsave">Set GTDInbox Account Password</button>
+    </div>
+    
+</div>

@@ -1,0 +1,6 @@
+overlay chrome://browser/content/browser.xul    chrome://gtdinbox/content/overlay.xul application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+overlay chrome://webrunner/content/webrunner.xul    chrome://gtdinbox/content/overlay.xul application=prism@developer.mozilla.org
+
+content	gtdinbox	content/
+content 	gtdinbox 	content/ contentaccessible=yes
+skin		gtdinbox	classic/1.0 skin/
