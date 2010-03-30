@@ -48,7 +48,7 @@ var giI18N = giBase.extend(null, {
      */
     load: function(callback) {
         if( giPluginManager.browserName=='mozilla' ) {
-            giI18N._data = giJson.decode(giJson.encode(giPageManager.i18NBackground.getData()));
+            giI18N._data = giJson.decode(giJson.encode(giMain.i18NBackground.getData()));
             giI18N._loaded = true;
             callback();
         } else {

@@ -28,6 +28,7 @@
 
 
   <!-- Start: GTDInbox Core -->
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giPageManager.js" />
   <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giPluginManager.js" />
   <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giLoadFailMonitor.js" />
   <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/core/giPlugin.js" />
@@ -65,7 +66,7 @@
   <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glThreadMessage.js" />
   <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glThreadContainer.js" />
   <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glTrafficWatcher.js" />
-  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glTrafficWatcherTracer.mozilla.js" />
+  <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glTrafficWatcherTracer.chrome.js" />
   <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glEnvironment.js" />
   <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glRequest.js" />
   <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gmail/glRequestOriginalMsg.js" />
@@ -155,7 +156,7 @@
 
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/common_backgroundPage/giI18NBackground.js" />
 
-    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/mozilla_backgroundPage/giPageManager.js" />
+    
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/mozilla_backgroundPage/main.js" />
 </overlay>
 

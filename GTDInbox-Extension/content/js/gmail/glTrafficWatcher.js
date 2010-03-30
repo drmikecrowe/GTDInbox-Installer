@@ -105,7 +105,6 @@ var glTrafficWatcher = giBase.extend({
                     postData: evt.postData
                 });
             }
-    
             if(this._urlHasListeners(evt.url, true)) {
                 // Listening for the 'complete' part of this request, tell evt
                 // It's up to glTrafficWatcherTracer to utilise this (or not)
