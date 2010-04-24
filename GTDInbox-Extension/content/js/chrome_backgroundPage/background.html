@@ -1,0 +1,264 @@
+<html>
+    
+    <head>
+        <script src="../util/oohelper.js"></script>
+        <script src="../util/debug.mozilla.js"></script>
+        <script src="../util/debug.chrome.js"></script>
+        <script src="../util/eventDispatcher.js"></script>
+        <script src="../util/giJson.js"></script>
+        <script src="../common_backgroundPage/giI18NBackground.js"></script>
+        
+        <script>
+        
+        
+            // Set up object definitions:
+            
+            var xhrPorts = [];
+            var XhrPort = function(port) { // TODO Use prototype on functions
+                console.log('xhrPort - create');
+                this.port = port;
+                
+                
+                this.xhr = new XMLHttpRequest();
+                
+                
+                var me = this;
+                this.xhr.onload = function(){me.notify('onload')}; 
+                this.xhr.onreadystatechange = function(){me.notify('onreadystatechange')};
+                
+                this.port.onMessage.addListener(function(msg){me._onMessage(msg)});
+                this.port.onDisconnect.addListener(function(){me._onDisconnect()});
+            };
+            XhrPort.prototype.notify = function(notifyType) {
+                // Send vars back to giXMLHttpRequest
+                    //console.log('xhr notify: '+notifyType+"\n"+this.xhr.readyState+'\n'+this.xhr.responseText);
+                    console.log('xhrPort - send notify: '+notifyType, 'background.html');
+                    var data = {'notifyType':notifyType, 'readyState':this.xhr.readyState, 'responseText': this.xhr.responseText};
+                    if( this.xhr.readyState>=2 ) data.status = this.xhr.status; // readyState 2 = "send() has been called, and headers and status are available."
+                    this.port.postMessage(data);
+                    console.log('xhrPort - sent notify: '+notifyType, 'background.html');
+            };
+            
+            XhrPort.prototype._onMessage = function(msg) {
+                if( msg.action ) {
+                    console.log('xhrPort - onMessage action: ' + msg.action, 'background.html');
+                    switch(msg.action) {
+                        case 'send':
+                        case 'open':
+                            console.log('xhrPort - onMessage action open: ' + msg.args[1], 'background.html');
+                        case 'setRequestHeader':
+                            try {
+                                this.xhr[msg.action].apply(this.xhr, msg.args);
+                            } catch(e) {
+                                console.log('xhr message error: '+msg.action+'\n'+msg.args.length+'\n'+msg.args.join(', ')+'\n'+e.toString()); // DEBUG
+                                this.port.postMessage({'error':e.toString()});
+                            }
+                            break;
+                    }
+                    if( msg.action=='send' ) this.notify('send');
+                }
+            };
+            
+            XhrPort.prototype._onDisconnect = function() {
+                for( var i = 0; i < xhrPorts.length; i++ ) {
+                    if( xhrPorts.port==this.port ) {
+                        xhrPorts.splice(i, 1);
+                        this.port = null;
+                        this.xhr.onload = null;
+                        this.xhr.onreadystatechange = null;
+                        this.xhr = null;
+                        return;
+                    }
+                }
+            };
+            
+            
+            
+            var PrefData = function() {
+                
+                this._prefDataPorts = [];
+                
+                this.prefs = null;
+                this.pluginVersions = null;
+                this.defaults = null;
+                
+            };
+            PrefData.prototype = {
+                
+                /**
+                 * Connect a new port (client)
+                 * @function {} ?
+                 * @param {Port} ?
+                 */
+                connectPort: function(port) {
+                    var pdp = new PrefDataPort(this, port);
+                    this._prefDataPorts.push(pdp);
+                },
+                
+                /**
+                 * Disconnect port (and containing object)
+                 * @function {} ?
+                 * @param {Port} port
+                 */
+                disconnectPort: function(port) {
+                    for( var i = 0; i < this._prefDataPorts.length; i++ ) {
+                        if( this._prefDataPorts.port===port ) {
+                            this._prefDataPorts.splice(i, 1);
+                            break;
+                        }
+                    }
+                },
+                
+                
+                /**
+                 * Load prefs (if necessary) then broadcast
+                 * @function {}
+                 * @param {Port} [port] If provided, just broadcast to one
+                 */
+                load: function(port) {
+                    if( this.prefs===null ) {
+                        // Read from store
+                        try {
+                            this.prefs = giJson.decode(localStorage['extensions.gtdinbox.account_prefs'] || "{}");
+                        } catch(e) {
+                            giLogger.warn(e, 'background.html', 'PrefData.load this.prefs');
+                            this.prefs = {};
+                        }
+                        try {
+                            this.defaults = giJson.decode(localStorage['extensions.gtdinbox.account_defaults'] || "{}");
+                        } catch(e) {
+                            giLogger.warn(e, 'background.html', 'PrefData.load this.defaults');
+                            this.defaults = {};
+                        }
+                        try {
+                            this.pluginVersions = giJson.decode(localStorage['extensions.gtdinbox.plugin_versions'] || "{}");
+                        } catch(e) {
+                            giLogger.warn(e, 'background.html', 'PrefData.load this.pluginVersions');
+                            this.pluginVersions = {};
+                        }
+                        this._broadcast(port);
+                    } else {
+                        this._broadcast(port);
+                    }
+                },
+                
+                /**
+                 * Notify all ports of latest settings
+                 * @function {}
+                 * @param {Port} [port] If provided, just broadcast to one
+                 * @param {Port} [exclPort] If provided, do not broadcast to just this one
+                 */
+                _broadcast: function(port, exclPort) {
+                    // Broadcast:
+                    var msg = {'clientAction':'load', 'prefs':this.prefs, 'defaults':this.defaults, 'pluginVersions':this.pluginVersions};
+                    if( port ) {
+                        port.postMessage(msg);
+                    } else {
+                        for( var i = 0; i < this._prefDataPorts.length; i++ ) {
+                            if( this._prefDataPorts[i].port!=exclPort ) {
+                                this._prefDataPorts[i].port.postMessage(msg);
+                            }
+                        }
+                    }
+                },
+                
+                /**
+                 * Save a data object and broadcast to all
+                 * @function {} ?
+                 * @param {Object} msg Pref data
+                 * @param {Port} port The port that fired it
+                 */
+                save: function(msg, port) {
+                    this.prefs = msg.prefs;
+                    this.defaults = msg.defaults;
+                    this.pluginVersions = msg.pluginVersions;
+                    
+                    
+                    // Write to store
+                    localStorage['extensions.gtdinbox.account_prefs'] = giJson.encode(this.prefs);
+                    localStorage['extensions.gtdinbox.account_defaults'] = giJson.encode(this.defaults);
+                    localStorage['extensions.gtdinbox.plugin_versions'] = giJson.encode(this.pluginVersions);
+                    
+                    // Broadcast to all except this port
+                    this._broadcast(null, port);
+                }
+            };
+            
+            var PrefDataPort = function(prefData, port) {
+                this.port = port;
+                this._prefData = prefData;
+                
+                var me = this;
+                port.onMessage.addListener(function(msg){me._onMessage(msg)});
+                
+            };
+            
+            PrefDataPort.prototype = {
+                /**
+                 * Notification from client
+                 * @function {} ?
+                 */
+                _onMessage: function(msg) {
+                    if( msg.bgAction ) {
+                        switch( msg.bgAction ) {
+                            case 'load':
+                                // Request to load, ensure data is up to date and broadcast
+                                this._prefData.load(this.port);
+                                break;
+                            case 'save':
+                                this._prefData.save(msg, this.port);
+                                break;
+                        }
+                    }
+                },
+                
+                /**
+                 * Port disconnected; remove from parent
+                 * @function{} ?
+                 */
+                _onDisconnect: function() {
+                    this._prefData.disconnectPort(this.port);
+                    this._prefData = null;
+                    this.port = null;
+                },
+            };
+            var prefData = new PrefData();
+        
+        
+        
+            // Set up listeners:
+            chrome.extension.onConnect.addListener(function(port){
+                if( port.name=='xhr' ) {
+                    var xp = new XhrPort(port);
+                    xhrPorts.push(xp);
+                }
+                if( port.name=='prefData' ) {
+                    prefData.connectPort(port);
+                }
+                
+            });
+            
+            chrome.extension.onRequest.addListener(function(request, sender, sendResponse){
+                switch( request.name ) {
+                    case 'getLocaleData':
+                        if( window.i18NBackground ) {
+                            sendResponse(window.i18NBackground.getData());
+                        } else {
+                            window.i18NBackground = new giI18NBackground();
+                            chrome.i18n.getAcceptLanguages(function(langList) {
+                                window.i18NBackground.setUserLocales(langList);
+                                window.i18NBackground.load(chrome.extension.getURL(""));
+                                sendResponse(window.i18NBackground.getData());
+                            })
+                        }
+                        break;
+                    default:
+                        sendResponse();
+                        break;
+                }
+                
+            });
+        
+        </script>
+    </head>
+</html>

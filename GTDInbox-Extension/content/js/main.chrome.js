@@ -1,0 +1,1 @@
+giPageManager.loadPage(document,"chrome");
