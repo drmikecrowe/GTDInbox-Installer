@@ -1,7 +1,7 @@
-<h1>GTDInbox Preferences</h2>
+
 
 <div id="preferences-pane">
-    
+	<h1>GTDInbox Preferences</h1>    
     
     <h2>Features</h2> <!-- Features Section -->
     
@@ -64,20 +64,18 @@
     
     <h2>Label Categories</h2> <!-- Label Categories Section -->
     
-    <button id="gtdi-pref-labelcategories-add">Add Category</button>
     
     <div id="gtdi-pref-labelcategoriescontainer">
-        <h4>Current Categories</h4>
-        
-        <select id="gtdi-pref-labelcategoriescontainer-categories" size="6">
-        </select>
+        <label for="gtdi-pref-labelcategoriescontainer-categories">Current categories:</label>       
+        <select id="gtdi-pref-labelcategoriescontainer-categories" size="6"></select>
+    	<button id="gtdi-pref-labelcategories-add">Add Category</button>
+        <button id="gtdi-pref-labelcategories-remove">Remove Category</button>
         <div id="gtdi-pref-labelcategoriescontainer-prefixcontainer" class="gtdi-pref-textboxcontainer">
             <label>Category Label Prefix:</label> <input type="text" id="gtdi-pref-labelcategoriescontainer-prefix" />
         </div>
         <div class='gtdi-pref-smallnote'>
             Changing prefixes may require you to manually rename labels in Gmail.
         </div>
-        <button id="gtdi-pref-labelcategories-remove">Remove Category</button>
     </div>
     
     <h2>Status Labels (Advanced)</h2> <!-- Status Labels Section -->
@@ -88,10 +86,9 @@
         
     <div id="gtdi-pref-statuslabelscontainer">
         
-        <h4>Inbuilt Status Labels</h4>
+        <label for="gtdi-pref-statuslabelscontainer-statuslabels">Inbuilt Status Labels</label>
         
-        <select id="gtdi-pref-statuslabelscontainer-statuslabels" size="6">
-        </select>
+        <select id="gtdi-pref-statuslabelscontainer-statuslabels" size="6">        </select>
         <div id="gtdi-pref-statuslabelscontainer-labelcontainer" class="gtdi-pref-textboxcontainer">
             <label>Status Label:</label> <span id="gtdi-pref-statuslabelscontainer-labelprefix"></span><input type="text" id="gtdi-pref-statuslabelscontainer-label" />
         </div>

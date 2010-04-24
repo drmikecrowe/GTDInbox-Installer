@@ -484,6 +484,27 @@ var giLogger = giBase.extend(null, {
         if( giLogger._pageLog[pageId] ) {
             delete giLogger._pageLog[pageId];
         }
+    },
+    
+    /**
+     * From a given element, work back to the root, creating a valid HTML
+     * structure of nodenames and attributes (but no content).
+     * @function {String} ?
+     * @param {Element} el the start node
+     * @return the html from the root to the el, on a linear path.
+     */
+    dumpHTMLStructure: function(el) {
+        var html = "";
+        while( el.parentNode ) {
+            var nodeName = el.nodeName;
+            var attributes = [];
+            for( var i = 0; i < el.attributes.length; i++ ) {
+                attributes.push("\""+el.attributes[i].name+"\"=\""+el.attributes[i].value+"\"");
+            }
+            html = "<"+nodeName+" "+attributes.join(" ")+">"+html+"</"+nodeName+">";
+            el = el.parentNode;
+        }
+        return html;
     }
     
     

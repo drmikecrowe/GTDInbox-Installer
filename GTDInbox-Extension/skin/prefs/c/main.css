@@ -3,27 +3,59 @@
 }
 
 .gtdi-popup-notice-content-prefsbase #preferences-pane {
-    background-color: #efefef;
+    background-color: #fff;
     max-height: 400px;
     overflow: auto;
+    padding: 10px;
 }
 
 .gtdi-popup-notice-content-prefsbase #preferences-pane .gtdi-pref-textboxcontainer label {
-    width: 130px;
     display:block;
-    float:left;
+    float:left; 
+    width: 130px;
 }
 
 .gtdi-popup-notice-content-prefsbase #preferences-pane button
 {
+	clear: both;
+	display: block;
     width: 200px;
+    margin: 0 0 5px;
 }
-
+.gtdi-popup-notice-content-prefsbase #preferences-pane h1 {
+	font-size: 18px;
+	font-weight: bold;
+}
 .gtdi-popup-notice-content-prefsbase #preferences-pane h2 {
-    margin-top: 30px;
+	border-top: 1px solid #7499dd;
+    margin-top: 15px;
+    padding-top: 15px;
+    color: #7499dd;
+}
+.gtdi-popup-notice-content-prefsbase #preferences-pane h2:first-child{
+	border: 0;
 }
 
 .gtdi-pref-smallprint{
     font-size: 0.9em;
     color: #555;
+}
+.gtdi-pref-feature{
+}
+.gtdi-popup-notice-content-prefsbase #preferences-pane h3{
+	border-top: 1px solid #ccc;
+}
+
+#gtdi-pref-labelcategoriescontainer-categories,
+#gtdi-pref-statuslabelscontainer-statuslabels{
+	width: 200px;
+	clear: both;
+}
+#gtdi-pref-labelcategoriescontainer label,
+#gtdi-pref-statuslabelscontainer label{
+	display: block;
+}
+.gtdi-pref-smallnote{
+	color: #999;
+	font-style: italic;
 }

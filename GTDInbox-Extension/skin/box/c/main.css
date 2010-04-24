@@ -1,13 +1,13 @@
 .gtdi-box-section
 {
 	background: #fff;
-    padding: 0 7px;
+    padding: 0;
 /*     border-bottom: 2px solid #E0ECFF; */
-	float: left;
+	/**float: left;**/
     font-family: arial,helvetica,sans-serif;
     font-size: 13px;
     line-height: 130%;
-    width: 146px;
+    width: 160px;
 }
 
 .gtdi-box-section a
@@ -20,15 +20,37 @@
     position: relative;
 }
 .gtdi-box-row-server {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
-.gtdi-box-row-preferences
+.gtdi-box-row-prefslink
 {
-    margin-top: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.gtdi-box-row-support,
+.gtdi-box-row-blog,
+.gtdi-box-row-discoverpremium,
+.gtdi-box-row-legalnotice,
+.gtdi-box-row-force_chat,
+.gtdi-box-row-prefslink,
+.gtdi-box-row-manageaccount,
+#gtdi-gtd-setup-msg{
+	font-size: 11px !important;
+	padding: 0 6px !important;
+}
+input#gtdi-boxpref-force{
+	margin-right: 4px;
 }
 
-.gtdi-box-row:hover
-{
+#gtdi-gtd-setup-msg{
+	font-weight: bold;
+	margin: 4px;
+	text-align: center;
+}
+#gtdi-gtd-setup-install{
+	text-align: center;
+	margin: 0 6px;
+	width: 145px;
 }
 
 
@@ -46,6 +68,7 @@
     background-color: #fff;
     border: 1px solid black;
     padding: 7px;
+    overflow: inherit;
 }
 
 .gtdi-box-row-popped-out
@@ -114,8 +137,8 @@ a.gtdi-news-blog-title:hover{
 }
 img.gtdi-news-new{
 	position: absolute;
-	top: 2px;
-	right: 0px;
+	top: 10px;
+	right: 6px;
 }
 .gtdi-box h2 img.gtdi-news-new{
 	top: 8px;
@@ -160,51 +183,64 @@ a.gtdi-news-twitter-title{
 
 
 /* GTDI-box - Sidebar item */
+/* PETE - this belongs in /gtd/main.css; as does news stuff. In fact everything but the very core 'box' framework */
 
 
-
-.gtdi-box-section-expand {
-	background: #E0ECFF url(../i/group-closed.gif)  no-repeat;
-    background-position: 6px 6px;
-/* 	margin-top: -7px; */
-    margin-left: -7px;
+.gtdi-searchbuilder-typelist-title{
+    background: #e0ecff;
+    background-position: 6px 4px;
+    border-bottom: 1px solid #fff;
+    font-size: 10px;
+    margin-left: 0px;
     cursor: pointer;
 	padding: 2px 0px;
-	width:138px;
     padding-left: 22px;
+    text-shadow: #fff 1px 0px 2px;
+    -moz-text-shadow: #fff 1px 0px 2px;
+    -webkit-text-shadow: #fff 1px 0 2px;
+    text-transform: uppercase;
+	line-height: 22px;
 }
-.gtdi-box-section-expanded
+
+.gtdi-box-section-expand, 
+.gtdi-searchbuilder-menu-section-title,
+.gtdi-menusection-title{
+	background: #e0ecff url(../i/gtdi-section-closed.png)  no-repeat;
+    background-position: 6px 6px;
+    border-bottom: 1px solid #fff;
+    font-size: 10px;
+    margin-left: 0px;
+    cursor: pointer;
+	padding: 2px 0px;
+    padding-left: 22px;
+    line-height: 22px;
+    text-shadow: #fff 1px 0px 2px;
+    -moz-text-shadow: #fff 1px 0px 2px;
+    -webkit-text-shadow: #fff 1px 0 2px;
+    text-transform: uppercase;
+   width: 160px;
+}
+.gtdi-box-section-expand{width:140px}
+.gtdi-box-section-expand:last-child{
+	border-bottom: none;
+}
+.gtdi-box-section-expanded,
+.gtdi-searchbuilder-menu-section-title.gtdi-expanded,
+.gtdi-menusection-title.gtdi-expanded
 {
-    background:#E0ECFF url(../i/group-open.gif) no-repeat scroll 6px 6px !important;
+    background:#E0ECFF url(../i/gtdi-section-open.png) no-repeat scroll 6px 6px !important;
 	padding-left:22px;
-	margin-bottom: 6px;
+	width: inherit
+	margin-bottom: 0px;
+	line-height: 22px;
 }
 
 .gtdi-box-dashboard-popout
 {
     position: absolute;
     right: 0px;
-/*     padding: 3px; */
     cursor: pointer;
 }
-
-
-
-
-
-div.gtdi-box-section div.gtdi-box-row:first-child{
-	margin-top: 6px !important;
-}
-div.gtdi-box-section div.gtdi-box-row:last-child{
-	margin-bottom: 6px !important;
-}
-
-/*
-div.gtdi-box-section:first-child div.gtdi-box-row:first-child{
-	margin-top: 0px !important;
-}
-*/
-
 
 
 .gtdi-popup-notice .gtdi-popup-notice-content-register{
@@ -275,7 +311,7 @@ div.gtdi-box-section:first-child div.gtdi-box-row:first-child{
 
 .gtdi-popup-notice-content-register input[type="password"]{
 	height: 30px !important;
-	line-height: 60px !important;
+	line-height: 30px !important;
 	font-size: 24px;
 	width: 160px;
 }
@@ -290,7 +326,7 @@ div.gtdi-box-section:first-child div.gtdi-box-row:first-child{
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	height: 40px !important;
-	line-height: 60px;
+	line-height: 32px;
 	font-weight: bold;
 	font-size: 16px;
 	margin: .5em 0;
@@ -298,7 +334,7 @@ div.gtdi-box-section:first-child div.gtdi-box-row:first-child{
 }
 .gtdi-box-account button{
 	height: 24px !important;
-	line-height: 40px;
+	line-height: 20px;
 	font-size: 12px;
 	float: none;
 	display: block;
@@ -335,14 +371,17 @@ div.gtdi-box-section:first-child div.gtdi-box-row:first-child{
 
 .gtdi-box-account{
 	border-bottom: 1px solid #e0ecff;
-	padding: 5px 0;
+	padding: 4px;
+}
+.gtdi-box-account button{
+	text-align: center;
 }
 #gtdi-box-account-error, #gtdi-box-account-error-retry, #gtdi-box-error{
 	background: #ffc;
 	font-size: 11px;
 	padding: 5px;
 	padding-top: 0;
-	margin: -9px -7px 0 -7px;
+	margin: 4px 0 0 0;
 }
 #gtdi-box-account-error-retry{
 	font-weight: bold;
@@ -423,4 +462,49 @@ div.gtdi-box-section:first-child div.gtdi-box-row:first-child{
 {
     font-size:0.9em;
     color: #AE0000;
+}
+
+#gtdi-gtd-setup-msg{
+	font-size: 11px;
+	padding: 5px 0;
+}
+#gtdi-gtd-setup-install{
+	margin-bottom: 5px;
+}
+
+.gtdi-navmodule
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+    width: 164px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: #E0ECFF;
+    color: black;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    position: relative;
+}
+.gtdi-navmodule-title
+{
+    cursor: pointer;
+    position: relative;
+    padding: 4px 0;
+}
+
+.gtdi-navmodule-content
+{
+    background-color: white !important;
+    width: 162px;
+}
+
+.gtdi-navmodule-footer
+{
+    clear: all;
+    height: 0px;
+    overflow: hidden;
 }

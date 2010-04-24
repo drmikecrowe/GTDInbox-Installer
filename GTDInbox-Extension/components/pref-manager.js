@@ -70,8 +70,8 @@ PrefManager.prototype = {
         this.prefs = this._jsonRead('account_prefs', {});
 
         // Populate _accounts from _prefs
-        this.accounts = [];
-        for(var account in this.prefs) this.accounts.push(account);
+        //this.accounts = [];
+        //for(var account in this.prefs) this.accounts.push(account);
 
         // Grab and unserialize account default prefs (for creating new accounts and reseting existing ones)
         this.defaults = this._jsonRead('account_default', {});

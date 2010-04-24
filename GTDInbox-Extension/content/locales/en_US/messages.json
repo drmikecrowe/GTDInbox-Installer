@@ -3,7 +3,7 @@
 			"message": "GTDInbox News"
 	},
 	"Box.about.support": {
-			"message": "Support / Help"
+			"message": "Support"
 	},
 	"Box.about.preferences": {
 			"message": "Preferences"
@@ -12,7 +12,7 @@
 			"message": "Manage account"
 	},
 	"Box.about.discoverpremium": {
-			"message": "Buy GTDInbox Plus"
+			"message": "Buy Plus"
 	},
 	"Box.expander.boxabout": {
 			"message": "About"
@@ -66,7 +66,7 @@
 			"message": "Oops! We could not send your error report to the GTDInbox server. Please try again in a few moments. "
 	},
 	"Box.Server.register": {
-			"message": "Register"
+			"message": "Register Plus"
 	},
 	"Box.Server.title": {
 			"message": "Account"
@@ -164,6 +164,9 @@
 	"Labels.Types.references": {
 			"message": "References"
 	},
+	"Labels.Types.deadlines": {
+			"message": "Deadlines"
+	},
 	"Labels.Types.old": {
 			"message": "Old"
 	},
@@ -205,9 +208,6 @@
 	},
 	"Labelling.labels": {
 			"message": "Labels"
-	},
-	"Labelling.statuses.today": {
-			"message": "Today"
 	},
 	"Labelling.statuses.next_action": {
 			"message": "Next"
@@ -266,6 +266,15 @@
 	"Labelling.notify.spam": {
 			"message": "Spam"
 	},
+    "Labelling.setup.noStatus": {
+            "message": "You have no Status labels yet!"
+    },
+    "Labelling.setup.setupLink": {
+            "message": "Setup GTDInbox"
+    },
+    "Labelling.setup.setupHide": {
+            "message": "Hide"
+    },
 	"ActionAndMove.button.archive": {
 			"message": "Archive"
 	},
@@ -524,6 +533,9 @@
 	"Box.filterextend": {
 			"message": "Filter %1"
 	},
+    "Box.gtdtypes.pin": {
+            "message": "Toggle pinning %1 to the sidebar"
+    },
 	"Box.gtdtypes.statuses": {
 			"message": "To Do"
 	},
@@ -587,6 +599,18 @@
 	"SearchBuilder.LabelsMenu.views.title": {
 			"message": "Views:"
 	},
+    "SearchBuilder.Menu.search_within" : {
+            "message": "Search Within"  
+    },
+    "SearchBuilder.Menu.search_within.search" : {
+            "message": "Search"
+    },
+    "SearchBuilder.item.tooltip": {
+            "message": "Click to view in Gmail (Hold the Alt-key when you select an item to keep this menu open)"
+    },
+    "SearchBuilder.TypeList.item.pinnedTooltip": {
+            "message": "Click to view in Gmail"
+    },
 	"LegalNotice": {
 			"message": "GTDInbox and its authors are not affiliated with, approved or endorsed by David Allen or the David Allen Company. GTD and Getting Things Done are registered trademarks of the David Allen Company. For more information on GTD, the David Allen Company, and related products, please visit DavidCo.com."
 	},
@@ -631,5 +655,92 @@
     },
     "ServerErrorReport.confirmApproveHTML": {
             "message": "GTDInbox would like to include your Gmail layout.\n\nHowever, as it may include some text from your emails, we would like to check this is okay with you. (We do not store this information for more than 14 days - just while we fix the problem, then we delete it from our systems - and it's extremely useful).\n\n\nOkay to include Gmail layout information?"
+    },
+    "Deadline.Intro": {
+            "message": "Schedule"
+    },
+    "Deadline.Today": {
+            "message": "Today"
+    },
+    "Deadline.Save": {
+            "message": "Save"
+    },
+    "Deadline.DefaultDate": {
+            "message": "mm/dd"
+    },
+    "Deadline.PrettyDate.none": {
+            "message": "None"
+    },
+    "Deadline.PrettyDate.month.1": {
+            "message": "January"
+    },
+    "Deadline.PrettyDate.month.2": {
+            "message": "February"
+    },
+    "Deadline.PrettyDate.month.3": {
+            "message": "March"
+    },
+    "Deadline.PrettyDate.month.4": {
+            "message": "April"
+    },
+    "Deadline.PrettyDate.month.5": {
+            "message": "May"
+    },
+    "Deadline.PrettyDate.month.6": {
+            "message": "June"
+    },
+    "Deadline.PrettyDate.month.7": {
+            "message": "July"
+    },
+    "Deadline.PrettyDate.month.8": {
+            "message": "August"
+    },
+    "Deadline.PrettyDate.month.9": {
+            "message": "September"
+    },
+    "Deadline.PrettyDate.month.10": {
+            "message": "October"
+    },
+    "Deadline.PrettyDate.month.11": {
+            "message": "November"
+    },
+    "Deadline.PrettyDate.month.12": {
+            "message": "December"
+    },
+    "Deadline.QuickLinks.none": {
+            "message": "none"
+    },
+    "Deadline.QuickLinks.day.singular": {
+            "message": "day"
+    },
+    "Deadline.QuickLinks.day.plural": {
+            "message": "days"
+    },
+    "Deadline.QuickLinks.week.singular": {
+            "message": "week"
+    },
+    "Deadline.invalidInput": {
+            "message": "Please enter a valid date, in the format of 'month/day'. E.g. for the 1st of December, you would enter 12/1."
+    },
+    "Deadline.ActionsHeaderButton": {
+            "message": "Schedule"
+    },
+    "Deadline.ActionsHeaderButton.menuItems.days.none": {
+            "message": "No Deadline"
+    },
+    "Deadline.ActionsHeaderButton.menuItems.days.0": {
+            "message": "Today"
+    },
+    "Deadline.ActionsHeaderButton.menuItems.days.1": {
+            "message": "Tomorrow"
+    },
+    "Deadline.ActionsHeaderButton.menuItems.weeks.1": {
+            "message": "1 Week"
+    },
+    "Deadline.ActionsHeaderButton.menuItems.save": {
+            "message": "Save"
+    },
+    "StoredSearch.Types.scheduled": {
+            "message": "Scheduled"
     }
 }

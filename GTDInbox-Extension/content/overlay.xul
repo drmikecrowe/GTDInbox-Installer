@@ -103,18 +103,24 @@
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdThreadListView.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdThreadListCommands.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdSearchButton.js" />
-    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabellingBox.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/actionBox/gtdActionBox.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/actionBox/gtdActionBoxCo.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/actionBox/gtdActionBoxCv.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/actionBox/gtdDeadlineEventSet.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabelingBox.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabellingDropdown.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabelsMenu.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdThread.js" />
-    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabelsTree.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdTreeList.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdThreadListPreviewer.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdComposeLabels.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdBox.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdBoxReviews.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdWelcome.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdSetup.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdLabelsInfo.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdSettingsView.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdDeadlineButton.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdStatsDayBox.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdGmailLabelsBox.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/gtdConversationActionAndMove.js" />
@@ -139,9 +145,8 @@
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListGroupByList.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/threadList/gtdThreadListGroupByContact.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilder.js" />
-    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilderLabelsTree.js" />
-    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilderLabelMenu.js" />
-    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilderSidebar.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilderTypeList.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/ui/searchBuilder/gtdSearchBuilderMenu.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdViews.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdLabelsData.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdEnvironment.js" />
@@ -149,6 +154,7 @@
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdPreLabeler.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdStatusThreadContainer.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/migrator.js" />
+    <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdStoredSearch.js" />
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/gtd/gtdMainPagePlugin.js" />
     
     <script type="application/x-javascript;version=1.7" src="chrome://gtdinbox/content/js/prefs/prefsBase.js" />

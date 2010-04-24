@@ -8,7 +8,6 @@
             "statuses": {
                 "prefix": "S/",
                 "core": {
-                    "today": {"name":"Today", "excludeFromOptions":true, "notExclusive":true},
                     "next_action": {"name":"Next", "autoInstall":true},
                     "action": {"name":"Action", "autoInstall":true},
                     "some_day": {"name":"Some Day", "autoInstall":true},
@@ -19,6 +18,7 @@
             "projects": { "prefix": "P/", "isPrimary":true },
             "contexts": { "prefix": "C/", "isPrimary":true },
             "references": { "prefix": "R/" },
+            "deadlines": { "prefix": "D/", "isHidden":true },
             "old": { "prefix": "Old/" },
             "misc": { "prefix": "" }
         }

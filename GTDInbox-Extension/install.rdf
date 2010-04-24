@@ -5,9 +5,9 @@
 
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>{bcd47b5a-43be-433f-9051-7ce2cdf94ac0}</em:id>
-		<em:version>3.0.20.4</em:version>
+		<em:version>3.0.22.7</em:version>
 		<em:name>GTDInbox for Gmail</em:name>
-		<em:description>Transform emails into tasks to get things done</em:description>
+		<em:description>Gmail plugin for task-based email management</em:description>
 		<em:homepageURL>http://www.gtdinbox.com</em:homepageURL>
 		<em:optionsURL>chrome://gtdinbox/content/overlay_options.xul</em:optionsURL>
 		<em:iconURL>chrome://gtdinbox/skin/logo32.png</em:iconURL>
